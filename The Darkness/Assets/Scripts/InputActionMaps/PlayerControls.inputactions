@@ -1,15 +1,15 @@
 {
-    "name": "PlayerActionMap",
+    "name": "PlayerControls",
     "maps": [
         {
-            "name": "Player",
-            "id": "1162700b-af2a-4dbf-b883-a73e59367f8a",
+            "name": "GroundMovement",
+            "id": "d49eff9f-5682-4866-b36a-87190ac768f8",
             "actions": [
                 {
-                    "name": "Movement",
+                    "name": "HorizontalMovement",
                     "type": "PassThrough",
-                    "id": "f2af2e6a-bb22-4ead-9596-ab35c3e5d003",
-                    "expectedControlType": "Vector3",
+                    "id": "fb7c6930-942f-4b53-ba57-ddedb1f77b54",
+                    "expectedControlType": "Vector2",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
@@ -17,7 +17,7 @@
                 {
                     "name": "MouseX",
                     "type": "PassThrough",
-                    "id": "abf96692-fb2b-4bf1-b71f-f8e419c37c2c",
+                    "id": "c1233043-dbef-410b-b21e-5458859f88c4",
                     "expectedControlType": "Axis",
                     "processors": "",
                     "interactions": "",
@@ -26,8 +26,17 @@
                 {
                     "name": "MouseY",
                     "type": "PassThrough",
-                    "id": "6dc2ca68-bb1e-43d7-a534-a6e1daec5d69",
+                    "id": "5d510b8b-6e77-49d0-9213-30552033da3e",
                     "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Jump",
+                    "type": "Button",
+                    "id": "dc32e78f-63d3-49b5-adba-b95a0594c35c",
+                    "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
@@ -35,63 +44,63 @@
             ],
             "bindings": [
                 {
-                    "name": "3D Vector",
-                    "id": "beb659c2-bc59-46c2-9dbc-a8e6d41cbeaa",
-                    "path": "3DVector",
+                    "name": "WASD",
+                    "id": "cffbc700-0fa4-4960-9d69-9463f12b47ab",
+                    "path": "2DVector",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Movement",
+                    "action": "HorizontalMovement",
                     "isComposite": true,
                     "isPartOfComposite": false
                 },
                 {
+                    "name": "up",
+                    "id": "456ae326-cfa0-4f13-ba1a-4daed4364b1a",
+                    "path": "<Keyboard>/w",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "HorizontalMovement",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "down",
+                    "id": "7fc8de18-cb04-4d0b-b602-4d5b52059169",
+                    "path": "<Keyboard>/s",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "HorizontalMovement",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
                     "name": "left",
-                    "id": "187abd7d-ccef-4046-bc20-ab764ec00ddb",
+                    "id": "8698bfd7-5c23-4954-9316-4ffe0004df61",
                     "path": "<Keyboard>/a",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Movement",
+                    "action": "HorizontalMovement",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
                 {
                     "name": "right",
-                    "id": "1ed67d2d-cee9-441b-a882-9b29b85cdb30",
+                    "id": "423aa462-b412-44d5-be0e-97d97ff94681",
                     "path": "<Keyboard>/d",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Movement",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "forward",
-                    "id": "53c18ce6-5bdf-4876-b3b1-38313f5bedfc",
-                    "path": "<Keyboard>/w",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Movement",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "backward",
-                    "id": "303de161-115a-46fb-a857-ab35e01075e0",
-                    "path": "<Keyboard>/s",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Movement",
+                    "action": "HorizontalMovement",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
                 {
                     "name": "",
-                    "id": "bc367d50-3566-4b1c-9ba9-bf0d78f1f2af",
+                    "id": "3a5d26be-d58a-43d5-81f0-ebf42d5c4127",
                     "path": "<Mouse>/delta/x",
                     "interactions": "",
                     "processors": "",
@@ -102,12 +111,23 @@
                 },
                 {
                     "name": "",
-                    "id": "e4ac7b55-2fd8-4cfd-8aaf-181ec2ef273c",
+                    "id": "2d06066e-789c-4fcd-b8ae-5a71afc08e0b",
                     "path": "<Mouse>/delta/y",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
                     "action": "MouseY",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "536f0603-c53d-4030-8e4f-db6603f0af95",
+                    "path": "<Keyboard>/space",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Jump",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
