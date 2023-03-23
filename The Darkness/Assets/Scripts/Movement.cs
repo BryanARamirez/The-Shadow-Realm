@@ -5,7 +5,7 @@ using UnityEngine;
 public class Movement : MonoBehaviour
 {
     [SerializeField] private CharacterController controller;
-    [SerializeField] private float speed = 11f;
+    private float speed = 4f;
     private Vector2 horizontalInput;
 
     [SerializeField] private float jumpHeight = 3.5f;
@@ -15,6 +15,12 @@ public class Movement : MonoBehaviour
     private Vector3 verticalVelocity = Vector3.zero;
     [SerializeField] private LayerMask groundMask;
     private bool isGrounded;
+
+    private bool sneak;
+    [SerializeField] private MeshRenderer Hand;
+
+    private float lastTime;
+    private bool sprinting;
 
     private void Update()
     {
@@ -37,6 +43,18 @@ public class Movement : MonoBehaviour
             jump = false;
         }
 
+        if(sneak)
+        {
+            StartCoroutine(invisible());
+        }
+
+        if(sprinting)
+        {
+            Debug.Log("Sprinting");
+            StartCoroutine(sprintTimer());
+            
+        }
+
         verticalVelocity.y += gravity * Time.deltaTime;
         controller.Move(verticalVelocity * Time.deltaTime);
     }
@@ -49,5 +67,37 @@ public class Movement : MonoBehaviour
     public void OnJumpPressed()
     {
         jump = true;
+    }
+
+    public void OnSneakPressed()
+    {
+        sneak = true;
+    }
+
+    public IEnumerator invisible()
+    {
+        for (int index = 0; index < 5; index++)
+        {
+            Hand.enabled = false;
+            yield return new WaitForSeconds(.1f);
+        }
+        Hand.enabled = true;
+        sneak = false;
+    }
+
+    public IEnumerator sprintTimer()
+    {
+        for (int index = 0; index < 12; index++)
+        {
+            speed = 12f;
+            yield return new WaitForSeconds(.1f);
+        }
+        speed = 4f;
+        sprinting = false;
+    }
+
+    public void OnSprintPressed()
+    {
+        sprinting = true;
     }
 }

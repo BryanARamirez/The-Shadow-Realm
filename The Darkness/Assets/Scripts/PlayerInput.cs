@@ -24,15 +24,20 @@ public class PlayerInput : MonoBehaviour
         //To know when space is pressed to jump
         groundMovement.Jump.performed += _ => movement.OnJumpPressed();
 
-        //Gets mouse input
+        //Reads mouse input
         groundMovement.MouseX.performed += ctx => mouseInput.x = ctx.ReadValue<float>();
         groundMovement.MouseY.performed += ctx => mouseInput.y = ctx.ReadValue<float>();
+
+        groundMovement.Sneak.performed += _ => movement.OnSneakPressed();
+        groundMovement.Sprint.performed += _ => movement.OnSprintPressed();
+
     }
+    //When players is spawned in enable the controls 
     private void OnEnable()
     {
         controls.Enable();
     }
-
+    //When player is destroyed disable controls to stop glitches and unintended actions
     private void OnDestroy()
     {
         controls.Disable();
@@ -40,7 +45,9 @@ public class PlayerInput : MonoBehaviour
 
     private void Update()
     {
+        //Constantly recieve the movement in the horizontal axis to update player location and movement
         movement.ReceiveInput(horizontalInput);
+        //Recieve mouse information to put it into use
         mouseLook.ReceiveInput(mouseInput);
     }
     
