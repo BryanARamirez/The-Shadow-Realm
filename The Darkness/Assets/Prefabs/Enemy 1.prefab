@@ -113,7 +113,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 7514636477157162348}
-  Player: {fileID: 0}
+  Player: {fileID: 6360997753130559971, guid: 432a49b4cb733504fa423d0e1ec3928e, type: 3}
   speed: 25
 --- !u!195 &7514636477157162348
 NavMeshAgent:

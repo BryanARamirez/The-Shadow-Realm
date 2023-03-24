@@ -7,12 +7,13 @@ public class EnemyFollow : MonoBehaviour
 {
     public NavMeshAgent enemy;
     public Transform Player;
-    public int speed = 25;
+    public float speed = 25;
    
 
     // Update is called once per frame
     void Update()
     {
         enemy.SetDestination(Player.position);
+
     }
 }
