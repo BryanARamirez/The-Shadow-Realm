@@ -16,7 +16,10 @@ public class PlayerInput : MonoBehaviour
 
     private float playerHealth = 15;
     private bool takingDamage;
+    private int lives = 3;
     public Text healthText;
+    public Text livesText;
+    public Text controlsText;
     [SerializeField] private MeshRenderer damageIndicator;
     private void Awake()
     {
@@ -59,6 +62,10 @@ public class PlayerInput : MonoBehaviour
         {
             StartCoroutine(damageIndicatorShowing());
         }
+        if(playerHealth <= 0)
+        {
+            loseLife();
+        }
     }
 
     private void OnTriggerEnter(Collider other)
@@ -85,10 +92,17 @@ public class PlayerInput : MonoBehaviour
     private void SetCountText()
     {
         healthText.text = "Health:" + playerHealth.ToString();
+        livesText.text = "Lives: " + lives.ToString();
     }
     private void takeDamage()
     {
         playerHealth--;
+        SetCountText();
+    }
+    private void loseLife()
+    {
+        lives--;
+        playerHealth = 15;
         SetCountText();
     }
 }
