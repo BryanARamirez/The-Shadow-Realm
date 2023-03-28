@@ -12,7 +12,9 @@ public class PlayerInput : MonoBehaviour
 
     private Vector2 horizontalInput;
     private Vector2 mouseInput;
-
+    private float playerHealth = 15;
+    private bool takingDamage;
+    [SerializeField] private MeshRenderer damageIndicator;
     private void Awake()
     {
         controls = new PlayerControls();
@@ -30,6 +32,7 @@ public class PlayerInput : MonoBehaviour
 
         groundMovement.Sneak.performed += _ => movement.OnSneakPressed();
         groundMovement.Sprint.performed += _ => movement.OnSprintPressed();
+        damageIndicator.enabled = false;
 
     }
     //When players is spawned in enable the controls 
@@ -49,6 +52,36 @@ public class PlayerInput : MonoBehaviour
         movement.ReceiveInput(horizontalInput);
         //Recieve mouse information to put it into use
         mouseLook.ReceiveInput(mouseInput);
+        if(takingDamage)
+        {
+            StartCoroutine(damageIndicatorShowing());
+        }
     }
-    
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "Enemy")
+        {
+            takingDamage = true;
+        }
+    }
+
+    public IEnumerator damageIndicatorShowing()
+    {
+        takeDamage();
+        for (int index = 0; index < 20; index++)
+        {
+            damageIndicator.enabled = true;
+            yield return new WaitForSeconds(.1f);
+        }
+        takingDamage = false;
+        damageIndicator.enabled = false;
+
+
+    }
+
+    private void takeDamage()
+    {
+        playerHealth--;
+    }
 }
