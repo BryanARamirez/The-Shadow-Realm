@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.UI;
 using UnityEngine;
 
 public class PlayerInput : MonoBehaviour
@@ -12,8 +13,10 @@ public class PlayerInput : MonoBehaviour
 
     private Vector2 horizontalInput;
     private Vector2 mouseInput;
+
     private float playerHealth = 15;
     private bool takingDamage;
+    public Text healthText;
     [SerializeField] private MeshRenderer damageIndicator;
     private void Awake()
     {
@@ -33,7 +36,7 @@ public class PlayerInput : MonoBehaviour
         groundMovement.Sneak.performed += _ => movement.OnSneakPressed();
         groundMovement.Sprint.performed += _ => movement.OnSprintPressed();
         damageIndicator.enabled = false;
-
+        SetCountText();
     }
     //When players is spawned in enable the controls 
     private void OnEnable()
@@ -63,12 +66,12 @@ public class PlayerInput : MonoBehaviour
         if (other.tag == "Enemy")
         {
             takingDamage = true;
+            takeDamage();
         }
     }
 
     public IEnumerator damageIndicatorShowing()
     {
-        takeDamage();
         for (int index = 0; index < 20; index++)
         {
             damageIndicator.enabled = true;
@@ -79,9 +82,13 @@ public class PlayerInput : MonoBehaviour
 
 
     }
-
+    private void SetCountText()
+    {
+        healthText.text = "Health:" + playerHealth.ToString();
+    }
     private void takeDamage()
     {
         playerHealth--;
+        SetCountText();
     }
 }
