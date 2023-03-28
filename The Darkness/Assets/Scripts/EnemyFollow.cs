@@ -29,17 +29,26 @@ public class EnemyFollow : MonoBehaviour
     public Transform player;    // reference to the player's Transform component
     public float followRange = 10f;    // range at which the enemy will start following the player
     public float speed = 5f;    // speed at which the enemy will move towards the player
+    [SerializeField] private Movement playerSneaking; //To get the sneaking bool from the Movement script to stop the enemy from chasing when sneakings
 
     private void Update()
     {
         // check the distance between the player and the enemy
         float distanceToPlayer = Vector3.Distance(transform.position, player.position);
 
-        // if the player is within range, move towards the player
-        if (distanceToPlayer <= followRange)
+        //Added if statements to stop the enemy from moving if the player sneaks
+        if (playerSneaking.sneak == false) 
         {
-            transform.LookAt(player.position);
-            transform.position = Vector3.MoveTowards(transform.position, player.position, speed * Time.deltaTime);
+            gameObject.GetComponent<NavMeshAgent>().isStopped = false;
+            if (distanceToPlayer <= followRange)
+            {
+                transform.LookAt(player.position);
+                transform.position = Vector3.MoveTowards(transform.position, player.position, speed * Time.deltaTime);
+            }
+        }
+        if (playerSneaking.sneak == true)
+        {
+            gameObject.GetComponent<NavMeshAgent>().isStopped = true;
         }
     }
 }

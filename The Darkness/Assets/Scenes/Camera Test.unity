@@ -463,9 +463,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1954081908}
     - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1954081908}
+    - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
       propertyPath: playerSneaking
       value: 
       objectReference: {fileID: 72320599}
+    - target: {fileID: 7514636477157162348, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
+      propertyPath: m_Speed
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
 --- !u!1 &1919217246
