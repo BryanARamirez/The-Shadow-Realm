@@ -98,7 +98,7 @@ GameObject:
   - component: {fileID: 1882895429303420105}
   - component: {fileID: 1882895429303420110}
   m_Layer: 0
-  m_Name: Player
+  m_Name: Player Container
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -158,6 +158,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   Hand: {fileID: 1882895428328648274}
+  player: {fileID: 0}
 --- !u!114 &1882895429303420105
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -188,6 +189,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movement: {fileID: 1882895429303420104}
   mouseLook: {fileID: 1882895429303420105}
+  healthText: {fileID: 0}
   damageIndicator: {fileID: 1882895429638342853}
 --- !u!1 &1882895429355817051
 GameObject:
@@ -201,7 +203,7 @@ GameObject:
   - component: {fileID: 1882895429355817045}
   - component: {fileID: 1882895429355817050}
   m_Layer: 0
-  m_Name: Capsule
+  m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -282,7 +284,7 @@ GameObject:
   - component: {fileID: 1882895429638342852}
   - component: {fileID: 1882895429638342853}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: Damage Indicator
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

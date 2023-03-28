@@ -16,8 +16,9 @@ public class Movement : MonoBehaviour
     [SerializeField] private LayerMask groundMask;
     private bool isGrounded;
 
-    private bool sneak;
+    public bool sneak;
     [SerializeField] private MeshRenderer Hand;
+    [SerializeField] private GameObject player;
 
     private float lastTime;
     private bool sprinting;
@@ -76,12 +77,14 @@ public class Movement : MonoBehaviour
 
     public IEnumerator invisible()
     {
-        for (int index = 0; index < 5; index++)
+        for (int index = 0; index < 10; index++)
         {
             Hand.enabled = false;
+            player.SetActive(false);
             yield return new WaitForSeconds(.1f);
         }
         Hand.enabled = true;
+        player.SetActive(false);
         sneak = false;
     }
 
