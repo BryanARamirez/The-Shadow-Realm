@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.UI;
 using UnityEngine;
 
 public class Movement : MonoBehaviour
@@ -22,6 +23,16 @@ public class Movement : MonoBehaviour
 
     private float lastTime;
     private bool sprinting;
+    private bool sneakReady;
+    [SerializeField] private Image sneakActive;
+
+
+
+    private void Awake()
+    {
+        lastTime = Time.time;
+        StartCoroutine(sneakTimer());
+    }
 
     private void Update()
     {
@@ -44,7 +55,7 @@ public class Movement : MonoBehaviour
             jump = false;
         }
 
-        if(sneak)
+        if(sneak && (Time.time - lastTime > 9f))
         {
             StartCoroutine(invisible());
         }
@@ -58,6 +69,15 @@ public class Movement : MonoBehaviour
 
         verticalVelocity.y += gravity * Time.deltaTime;
         controller.Move(verticalVelocity * Time.deltaTime);
+
+        if(sneakReady)
+        {
+            sneakActive.enabled = true;
+        }
+        if (sneakReady == false)
+        {
+            sneakActive.enabled = false;
+        }
     }
 
     public void ReceiveInput(Vector2 _horizontalInput)
@@ -72,7 +92,12 @@ public class Movement : MonoBehaviour
 
     public void OnSneakPressed()
     {
-        sneak = true;
+        if((Time.time - lastTime > 9f))
+        {
+            sneak = true;
+            sneakReady = false;
+            StartCoroutine(sneakTimer());
+        }
     }
 
     public IEnumerator invisible()
@@ -86,19 +111,27 @@ public class Movement : MonoBehaviour
         Hand.enabled = true;
         player.SetActive(false);
         sneak = false;
+        lastTime = Time.time;
     }
-
+    private IEnumerator sneakTimer()
+    {
+        Debug.Log("Sneak Timer Started");
+        for (int index = 0; index < 100f; index++)
+        {
+            yield return new WaitForSeconds(0.1f);
+        }
+        sneakReady = true;
+    }
     public IEnumerator sprintTimer()
     {
-        for (int index = 0; index < 12; index++)
+        for (int index = 0; index < 20f; index++)
         {
-            speed = 12f;
+            speed = 15f;
             yield return new WaitForSeconds(.1f);
         }
         speed = 4f;
         sprinting = false;
     }
-
     public void OnSprintPressed()
     {
         sprinting = true;
