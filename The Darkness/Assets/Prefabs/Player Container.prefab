@@ -106,7 +106,7 @@ GameObject:
   - component: {fileID: 1896989686417969221}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -269,7 +269,7 @@ GameObject:
   - component: {fileID: 7474965557800454382}
   m_Layer: 0
   m_Name: Hand
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -365,7 +365,7 @@ GameObject:
   - component: {fileID: 8679410072903788111}
   m_Layer: 0
   m_Name: Player Container
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -460,6 +460,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movement: {fileID: 2134573846112925760}
   mouseLook: {fileID: 8019499425840857730}
+  spawnPoint: {fileID: 0}
+  spawnPointGO: {fileID: 0}
   healthText: {fileID: 0}
   livesText: {fileID: 0}
   controlsText: {fileID: 0}

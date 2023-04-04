@@ -7,6 +7,7 @@ TagManager:
   - Enemy
   - Dummy
   - Key
+  - Respawn Point
   layers:
   - Default
   - TransparentFX
