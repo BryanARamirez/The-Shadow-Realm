@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4649725635096260138}
   - component: {fileID: 2103530826011591326}
   m_Layer: 0
-  m_Name: FlashLight (1)
+  m_Name: TopLight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -460,6 +460,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movement: {fileID: 2134573846112925760}
   mouseLook: {fileID: 8019499425840857730}
+  spawnPoint: {fileID: 0}
   healthText: {fileID: 0}
   livesText: {fileID: 0}
   controlsText: {fileID: 0}
