@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 using UnityEngine;
 
 public class PlayerInput : MonoBehaviour
@@ -15,9 +16,9 @@ public class PlayerInput : MonoBehaviour
     private Vector2 mouseInput;
 
     private float playerHealth = 15;
-    
 
-    
+
+    [SerializeField] private Transform spawnPoint;
     
     private bool takingDamage;
     private int lives = 3;
@@ -74,11 +75,11 @@ public class PlayerInput : MonoBehaviour
         {
             StartCoroutine(damageIndicatorShowing());
         }
-        if(playerHealth <= 0)
+        if (playerHealth <= 0)
         {
-            loseLife();
+            respawn();
         }
-       
+
     }
 
     private void OnTriggerEnter(Collider other)
@@ -129,5 +130,13 @@ public class PlayerInput : MonoBehaviour
         lives--;
         playerHealth = 15;
         SetCountText();
+    }
+    private void respawn()
+    {
+        damageIndicator.enabled = false;
+        GetComponent<CharacterController>().enabled = false;
+        transform.position = spawnPoint.position;
+        loseLife();
+        GetComponent<CharacterController>().enabled = true;
     }
 }
