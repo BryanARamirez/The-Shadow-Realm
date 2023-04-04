@@ -19,7 +19,8 @@ public class PlayerInput : MonoBehaviour
 
 
     [SerializeField] private Transform spawnPoint;
-    
+    [SerializeField] private GameObject spawnPointGO;
+    private float enemyDamage;
     private bool takingDamage;
     private int lives = 3;
     public Text healthText;
@@ -79,6 +80,10 @@ public class PlayerInput : MonoBehaviour
         {
             respawn();
         }
+        if (lives <= 0)
+        {
+            gameOver();
+        }
 
     }
 
@@ -87,6 +92,7 @@ public class PlayerInput : MonoBehaviour
         if (other.tag == "Enemy")
         {
             takingDamage = true;
+            enemyDamage = 5;
             takeDamage();
         }
         if (other.gameObject.CompareTag("Key"))
@@ -95,7 +101,11 @@ public class PlayerInput : MonoBehaviour
             count = count + 1;
             SetCountText();
         }
-        
+        if (other.gameObject.CompareTag("Respawn Point"))
+        {
+            spawnPointGO.transform.position = other.transform.position;
+        }
+
     }
 
     public IEnumerator damageIndicatorShowing()
@@ -114,15 +124,11 @@ public class PlayerInput : MonoBehaviour
     {
         healthText.text = "Health:" + playerHealth.ToString();
         livesText.text = "Lives: " + lives.ToString();
-        if(lives <= 0)
-        {
-            loseText.text = "You Lose";
-        }
         countText.text = "Count:" + count.ToString();
     }
     private void takeDamage()
     {
-        playerHealth--;
+        playerHealth = playerHealth - enemyDamage;
         SetCountText();
     }
     private void loseLife()
@@ -133,10 +139,16 @@ public class PlayerInput : MonoBehaviour
     }
     private void respawn()
     {
-        damageIndicator.enabled = false;
         GetComponent<CharacterController>().enabled = false;
         transform.position = spawnPoint.position;
+        damageIndicator.enabled = false;
         loseLife();
         GetComponent<CharacterController>().enabled = true;
+    }
+    private void gameOver()
+    {
+        loseText.text = "GameOver";
+        damageIndicator.enabled = false;
+        GetComponent<CharacterController>().enabled = false;
     }
 }
