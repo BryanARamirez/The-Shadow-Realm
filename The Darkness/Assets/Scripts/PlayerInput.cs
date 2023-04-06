@@ -22,7 +22,7 @@ public class PlayerInput : MonoBehaviour
     [SerializeField] private GameObject spawnPointGO;
     private float enemyDamage;
     private bool takingDamage;
-    private int lives = 3;
+    public int lives = 3;
     public Text healthText;
     public Text livesText;
     public Text controlsText;
@@ -30,6 +30,9 @@ public class PlayerInput : MonoBehaviour
     public Text loseText;
     private int count;
     [SerializeField] private MeshRenderer damageIndicator;
+
+    private float maxFallDistance = 10f;
+
     private void Awake()
     {
         controls = new PlayerControls();
@@ -84,6 +87,10 @@ public class PlayerInput : MonoBehaviour
         {
             gameOver();
         }
+        if (transform.position.y < -maxFallDistance)
+        {
+            respawn();
+        }
 
     }
 
@@ -137,7 +144,7 @@ public class PlayerInput : MonoBehaviour
         playerHealth = 15;
         SetCountText();
     }
-    private void respawn()
+    public void respawn()
     {
         GetComponent<CharacterController>().enabled = false;
         transform.position = spawnPoint.position;
@@ -148,7 +155,5 @@ public class PlayerInput : MonoBehaviour
     private void gameOver()
     {
         loseText.text = "GameOver";
-        damageIndicator.enabled = false;
-        GetComponent<CharacterController>().enabled = false;
     }
 }

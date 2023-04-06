@@ -115,7 +115,7 @@ MonoBehaviour:
   enemy: {fileID: 7514636477157162348}
   player: {fileID: 1882895429508104048, guid: 432a49b4cb733504fa423d0e1ec3928e, type: 3}
   followRange: 0
-  speed: 25
+  speed: 10
   playerSneaking: {fileID: 0}
 --- !u!195 &7514636477157162348
 NavMeshAgent:

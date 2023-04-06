@@ -6,13 +6,13 @@ using UnityEngine;
 public class Movement : MonoBehaviour
 {
     [SerializeField] private CharacterController controller;
-    private float speed = 4f;
+    private float speed = 10f;
     private Vector2 horizontalInput;
 
-    [SerializeField] private float jumpHeight = 3.5f;
+    [SerializeField] private float jumpHeight = 5f;
     private bool jump;
 
-    [SerializeField] private float gravity = -30f; // -9.81
+    [SerializeField] private float gravity = -1f;
     private Vector3 verticalVelocity = Vector3.zero;
     [SerializeField] private LayerMask groundMask;
     private bool isGrounded;
@@ -92,7 +92,7 @@ public class Movement : MonoBehaviour
 
     public void OnSneakPressed()
     {
-        if((Time.time - lastTime > 9f))
+        if((Time.time - lastTime > 9f) && sneakReady == true)
         {
             sneak = true;
             sneakReady = false;
@@ -102,7 +102,7 @@ public class Movement : MonoBehaviour
 
     public IEnumerator invisible()
     {
-        for (int index = 0; index < 10; index++)
+        for (int index = 0; index < 15; index++)
         {
             Hand.enabled = false;
             player.SetActive(false);
@@ -116,7 +116,7 @@ public class Movement : MonoBehaviour
     private IEnumerator sneakTimer()
     {
         Debug.Log("Sneak Timer Started");
-        for (int index = 0; index < 100f; index++)
+        for (int index = 0; index < 150f; index++)
         {
             yield return new WaitForSeconds(0.1f);
         }
@@ -126,7 +126,7 @@ public class Movement : MonoBehaviour
     {
         for (int index = 0; index < 20f; index++)
         {
-            speed = 15f;
+            speed = 20f;
             yield return new WaitForSeconds(.1f);
         }
         speed = 4f;
