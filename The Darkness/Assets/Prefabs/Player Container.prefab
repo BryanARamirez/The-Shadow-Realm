@@ -363,6 +363,7 @@ GameObject:
   - component: {fileID: 2134573846112925760}
   - component: {fileID: 8019499425840857730}
   - component: {fileID: 8679410072903788111}
+  - component: {fileID: -7936405843355478090}
   m_Layer: 0
   m_Name: Player Container
   m_TagString: Untagged
@@ -461,12 +462,28 @@ MonoBehaviour:
   movement: {fileID: 2134573846112925760}
   mouseLook: {fileID: 8019499425840857730}
   spawnPoint: {fileID: 0}
+  spawnPointGO: {fileID: 0}
+  lives: 3
   healthText: {fileID: 0}
   livesText: {fileID: 0}
   controlsText: {fileID: 0}
   countText: {fileID: 0}
   loseText: {fileID: 0}
   damageIndicator: {fileID: 5340857804663380922}
+--- !u!114 &-7936405843355478090
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6709386633734507235}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1edc6a5f79202f94e9fa7ad3ce80c732, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pauseMenu: {fileID: 0}
+  isPaused: 0
 --- !u!1 &6968804449465763178
 GameObject:
   m_ObjectHideFlags: 0

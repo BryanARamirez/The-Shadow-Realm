@@ -414,6 +414,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -7936405843355478090, guid: 432a49b4cb733504fa423d0e1ec3928e, type: 3}
+      propertyPath: pauseMenu
+      value: 
+      objectReference: {fileID: 2138454616}
     - target: {fileID: 1882895429303420104, guid: 432a49b4cb733504fa423d0e1ec3928e, type: 3}
       propertyPath: player
       value: 
@@ -514,6 +518,10 @@ PrefabInstance:
       propertyPath: spawnPoint
       value: 
       objectReference: {fileID: 310071140}
+    - target: {fileID: 8679410072903788111, guid: 432a49b4cb733504fa423d0e1ec3928e, type: 3}
+      propertyPath: pauseButton
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 8679410072903788111, guid: 432a49b4cb733504fa423d0e1ec3928e, type: 3}
       propertyPath: controlsText
       value: 
@@ -676,16 +684,36 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
       propertyPath: speed
-      value: 2
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
       propertyPath: player
       value: 
       objectReference: {fileID: 214884597}
     - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
+      propertyPath: followRange
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
       propertyPath: playerSneaking
       value: 
       objectReference: {fileID: 214884595}
+    - target: {fileID: 4287002956015730540, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 4287002956015730542, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4287002957136145353, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4287002957136145359, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
 --- !u!114 &1845960957 stripped
@@ -765,6 +793,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2138454616 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1327098103384535550, guid: e2c83798344ea0342bb0ee857f7e7e9f, type: 3}
+  m_PrefabInstance: {fileID: 7124820671005980301}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1199691955261623703
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -829,6 +862,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1327098103384535550, guid: e2c83798344ea0342bb0ee857f7e7e9f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1614899219489915165, guid: e2c83798344ea0342bb0ee857f7e7e9f, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -557
@@ -1084,7 +1121,9 @@ PrefabInstance:
         Sprint
         = Shift
 
-        Sneak = E'
+        Sneak = E
+
+        Pause = Esc'
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 2196698610072205494, guid: e2c83798344ea0342bb0ee857f7e7e9f, type: 3}
