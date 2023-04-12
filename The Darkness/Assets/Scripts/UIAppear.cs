@@ -14,11 +14,14 @@ public class UIAppear : MonoBehaviour
             customImage.enabled = true;
         }
     }
+
     void OnTriggerExit(Collider other)
     {
         if (other.CompareTag("Player"))
         {
             customImage.enabled = false;
+            gameObject.SetActive(false);
+
         }
     }
 }
