@@ -112,6 +112,12 @@ public class PlayerInput : MonoBehaviour
         {
             spawnPointGO.transform.position = other.transform.position;
         }
+        if(other.tag == "slowMonster")
+        {
+            takingDamage = true;
+            enemyDamage = 15;
+            takeDamage();
+        }
 
     }
 
