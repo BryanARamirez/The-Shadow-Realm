@@ -7,7 +7,7 @@ using UnityEngine.AI;
 public class StunGun : MonoBehaviour
 {
     [SerializeField] private GameObject stunTaser;
-    private int stunAmmo;
+    public int stunAmmo;
     [SerializeField] private Text stunAmmoText;
     private bool isInUse = false;
 
@@ -15,12 +15,6 @@ public class StunGun : MonoBehaviour
     {
         stunAmmo = 3;
         stunAmmoText.text = "Stun Ammo: " + stunAmmo.ToString();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 
     public void OnStunPressed()
@@ -43,5 +37,17 @@ public class StunGun : MonoBehaviour
         stunTaser.SetActive(false);
         isInUse = false;
         stunAmmoText.text = "Stun Ammo: " + stunAmmo.ToString();
+    }
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "StunAmmo")
+        {
+            if(stunAmmo < 3)
+            {
+                stunAmmo++;
+                stunAmmoText.text = "Stun Ammo: " + stunAmmo.ToString();
+                Destroy(other.gameObject);
+            }
+        }
     }
 }
