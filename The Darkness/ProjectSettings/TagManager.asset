@@ -9,6 +9,7 @@ TagManager:
   - Key
   - Respawn Point
   - slowMonster
+  - StunTaser
   layers:
   - Default
   - TransparentFX
