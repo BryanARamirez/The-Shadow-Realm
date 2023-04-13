@@ -31,11 +31,13 @@ public class PlayerInput : MonoBehaviour
     public Text loseText;
     private int count;
     [SerializeField] private MeshRenderer damageIndicator;
+    public Image detectedSense;
 
     private float maxFallDistance = 10f;
 
     private void Awake()
     {
+        detectedSense.enabled = false;
         controls = new PlayerControls();
         groundMovement = controls.GroundMovement;
 

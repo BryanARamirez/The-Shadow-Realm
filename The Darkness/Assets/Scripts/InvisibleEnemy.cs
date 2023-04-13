@@ -13,6 +13,7 @@ public class InvisibleEnemy : MonoBehaviour
     private float invisibilityRange = 10f;
     [SerializeField] MeshRenderer invisibleEnemy;
     public bool isStunned = false;
+    [SerializeField] private PlayerInput playerInput;
 
     private void Update()
     {
@@ -44,6 +45,25 @@ public class InvisibleEnemy : MonoBehaviour
         if (playerSneaking.sneak == true)
         {
             gameObject.GetComponent<NavMeshAgent>().isStopped = true;
+        }
+
+        int layer = 7;
+        int layerMask = 1 << layer;
+        var ray = new Ray(this.transform.position, this.transform.forward);
+        RaycastHit hit;
+
+        Vector3 origin = transform.position;
+        Vector3 direction = transform.position;
+        Debug.DrawRay(origin, this.transform.forward * 10f, Color.yellow);
+
+        if (Physics.Raycast(ray, out hit, followRange, layerMask))
+        {
+            print("There is something in front of the object!");
+            playerInput.detectedSense.enabled = true;
+        }
+        else
+        {
+            playerInput.detectedSense.enabled = false;
         }
     }
     private void OnTriggerEnter(Collider other)
