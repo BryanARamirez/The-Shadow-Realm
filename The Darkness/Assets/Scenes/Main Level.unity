@@ -27291,6 +27291,68 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1063708439}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1001 &1066386258
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1835522580}
+    m_Modifications:
+    - target: {fileID: 6957402049591278801, guid: cf9ccc6f85b51554ebabac243e51c938, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6957402049591278801, guid: cf9ccc6f85b51554ebabac243e51c938, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 100.59
+      objectReference: {fileID: 0}
+    - target: {fileID: 6957402049591278801, guid: cf9ccc6f85b51554ebabac243e51c938, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -27.211
+      objectReference: {fileID: 0}
+    - target: {fileID: 6957402049591278801, guid: cf9ccc6f85b51554ebabac243e51c938, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 302.91
+      objectReference: {fileID: 0}
+    - target: {fileID: 6957402049591278801, guid: cf9ccc6f85b51554ebabac243e51c938, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6957402049591278801, guid: cf9ccc6f85b51554ebabac243e51c938, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6957402049591278801, guid: cf9ccc6f85b51554ebabac243e51c938, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6957402049591278801, guid: cf9ccc6f85b51554ebabac243e51c938, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6957402049591278801, guid: cf9ccc6f85b51554ebabac243e51c938, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6957402049591278801, guid: cf9ccc6f85b51554ebabac243e51c938, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6957402049591278801, guid: cf9ccc6f85b51554ebabac243e51c938, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6957402049591278805, guid: cf9ccc6f85b51554ebabac243e51c938, type: 3}
+      propertyPath: m_Name
+      value: StunAmmo (2)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: cf9ccc6f85b51554ebabac243e51c938, type: 3}
+--- !u!4 &1066386259 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6957402049591278801, guid: cf9ccc6f85b51554ebabac243e51c938, type: 3}
+  m_PrefabInstance: {fileID: 1066386258}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1068893429
 GameObject:
   m_ObjectHideFlags: 0
@@ -27803,6 +27865,68 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1080064268}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1001 &1080772310
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1835522580}
+    m_Modifications:
+    - target: {fileID: 6957402049591278801, guid: cf9ccc6f85b51554ebabac243e51c938, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6957402049591278801, guid: cf9ccc6f85b51554ebabac243e51c938, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 106.89
+      objectReference: {fileID: 0}
+    - target: {fileID: 6957402049591278801, guid: cf9ccc6f85b51554ebabac243e51c938, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -27.211
+      objectReference: {fileID: 0}
+    - target: {fileID: 6957402049591278801, guid: cf9ccc6f85b51554ebabac243e51c938, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 191.61
+      objectReference: {fileID: 0}
+    - target: {fileID: 6957402049591278801, guid: cf9ccc6f85b51554ebabac243e51c938, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6957402049591278801, guid: cf9ccc6f85b51554ebabac243e51c938, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6957402049591278801, guid: cf9ccc6f85b51554ebabac243e51c938, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6957402049591278801, guid: cf9ccc6f85b51554ebabac243e51c938, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6957402049591278801, guid: cf9ccc6f85b51554ebabac243e51c938, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6957402049591278801, guid: cf9ccc6f85b51554ebabac243e51c938, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6957402049591278801, guid: cf9ccc6f85b51554ebabac243e51c938, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6957402049591278805, guid: cf9ccc6f85b51554ebabac243e51c938, type: 3}
+      propertyPath: m_Name
+      value: StunAmmo (3)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: cf9ccc6f85b51554ebabac243e51c938, type: 3}
+--- !u!4 &1080772311 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6957402049591278801, guid: cf9ccc6f85b51554ebabac243e51c938, type: 3}
+  m_PrefabInstance: {fileID: 1080772310}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1084996107
 GameObject:
   m_ObjectHideFlags: 0
@@ -36719,6 +36843,68 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3145773577174369668, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
   m_PrefabInstance: {fileID: 1462590284}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1468642620
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1835522580}
+    m_Modifications:
+    - target: {fileID: 6957402049591278801, guid: cf9ccc6f85b51554ebabac243e51c938, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6957402049591278801, guid: cf9ccc6f85b51554ebabac243e51c938, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 9.3539505
+      objectReference: {fileID: 0}
+    - target: {fileID: 6957402049591278801, guid: cf9ccc6f85b51554ebabac243e51c938, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -27.211
+      objectReference: {fileID: 0}
+    - target: {fileID: 6957402049591278801, guid: cf9ccc6f85b51554ebabac243e51c938, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 328.6882
+      objectReference: {fileID: 0}
+    - target: {fileID: 6957402049591278801, guid: cf9ccc6f85b51554ebabac243e51c938, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6957402049591278801, guid: cf9ccc6f85b51554ebabac243e51c938, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6957402049591278801, guid: cf9ccc6f85b51554ebabac243e51c938, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6957402049591278801, guid: cf9ccc6f85b51554ebabac243e51c938, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6957402049591278801, guid: cf9ccc6f85b51554ebabac243e51c938, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6957402049591278801, guid: cf9ccc6f85b51554ebabac243e51c938, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6957402049591278801, guid: cf9ccc6f85b51554ebabac243e51c938, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6957402049591278805, guid: cf9ccc6f85b51554ebabac243e51c938, type: 3}
+      propertyPath: m_Name
+      value: StunAmmo
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: cf9ccc6f85b51554ebabac243e51c938, type: 3}
+--- !u!4 &1468642621 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6957402049591278801, guid: cf9ccc6f85b51554ebabac243e51c938, type: 3}
+  m_PrefabInstance: {fileID: 1468642620}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1472051177
 GameObject:
   m_ObjectHideFlags: 0
@@ -38673,6 +38859,68 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1531328755}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1001 &1535623121
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1835522580}
+    m_Modifications:
+    - target: {fileID: 6957402049591278801, guid: cf9ccc6f85b51554ebabac243e51c938, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6957402049591278801, guid: cf9ccc6f85b51554ebabac243e51c938, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 88.09
+      objectReference: {fileID: 0}
+    - target: {fileID: 6957402049591278801, guid: cf9ccc6f85b51554ebabac243e51c938, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -27.211
+      objectReference: {fileID: 0}
+    - target: {fileID: 6957402049591278801, guid: cf9ccc6f85b51554ebabac243e51c938, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 347.51
+      objectReference: {fileID: 0}
+    - target: {fileID: 6957402049591278801, guid: cf9ccc6f85b51554ebabac243e51c938, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6957402049591278801, guid: cf9ccc6f85b51554ebabac243e51c938, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6957402049591278801, guid: cf9ccc6f85b51554ebabac243e51c938, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6957402049591278801, guid: cf9ccc6f85b51554ebabac243e51c938, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6957402049591278801, guid: cf9ccc6f85b51554ebabac243e51c938, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6957402049591278801, guid: cf9ccc6f85b51554ebabac243e51c938, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6957402049591278801, guid: cf9ccc6f85b51554ebabac243e51c938, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6957402049591278805, guid: cf9ccc6f85b51554ebabac243e51c938, type: 3}
+      propertyPath: m_Name
+      value: StunAmmo (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: cf9ccc6f85b51554ebabac243e51c938, type: 3}
+--- !u!4 &1535623122 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6957402049591278801, guid: cf9ccc6f85b51554ebabac243e51c938, type: 3}
+  m_PrefabInstance: {fileID: 1535623121}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1540817768
 GameObject:
   m_ObjectHideFlags: 0
@@ -47228,6 +47476,40 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1834057071}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1835522579
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1835522580}
+  m_Layer: 0
+  m_Name: Stun Ammo Lvl 1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1835522580
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1835522579}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -117.39, y: 24.941, z: 20.59}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1468642621}
+  - {fileID: 1535623122}
+  - {fileID: 1066386259}
+  - {fileID: 1080772311}
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1842810489
 GameObject:
   m_ObjectHideFlags: 0
