@@ -7,6 +7,7 @@ using UnityEngine;
 public class PlayerInput : MonoBehaviour
 {
     [SerializeField] private Movement movement;
+    [SerializeField] private StunGun stunGun;
     [SerializeField] private MouseLook mouseLook;
 
     private PlayerControls controls;
@@ -50,6 +51,7 @@ public class PlayerInput : MonoBehaviour
 
         groundMovement.Sneak.performed += _ => movement.OnSneakPressed();
         groundMovement.Sprint.performed += _ => movement.OnSprintPressed();
+        groundMovement.StunTaser.performed += _ => stunGun.OnStunPressed();
         damageIndicator.enabled = false;
         SetCountText();
     }

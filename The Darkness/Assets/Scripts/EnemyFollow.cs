@@ -11,6 +11,7 @@ public class EnemyFollow : MonoBehaviour
     public float followRange = 10f;    // range at which the enemy will start following the player
     public float speed = 1f;    // speed at which the enemy will move towards the player
     [SerializeField] private Movement playerSneaking; //To get the sneaking bool from the Movement script to stop the enemy from chasing when sneakings
+    public bool isStunned = false;
 
     private void Update()
     {
@@ -20,16 +21,38 @@ public class EnemyFollow : MonoBehaviour
         //Added if statements to stop the enemy from moving if the player sneaks
         if (playerSneaking.sneak == false) 
         {
-            gameObject.GetComponent<NavMeshAgent>().isStopped = false;
-            if (distanceToPlayer <= followRange)
+            if (isStunned == false)
             {
-                transform.LookAt(player.position);
-                transform.position = Vector3.MoveTowards(transform.position, player.position, speed * Time.deltaTime);
+                gameObject.GetComponent<NavMeshAgent>().isStopped = false;
+                if (distanceToPlayer <= followRange)
+                {
+                    transform.LookAt(player.position);
+                    transform.position = Vector3.MoveTowards(transform.position, player.position, speed * Time.deltaTime);
+                }
             }
         }
         if (playerSneaking.sneak == true)
         {
             gameObject.GetComponent<NavMeshAgent>().isStopped = true;
         }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "StunTaser")
+        {
+            StartCoroutine(stunned());
+        }
+    }
+    private IEnumerator stunned()
+    {
+        isStunned = true;
+        for (int index = 0; index < 1f; index++)
+        {
+            gameObject.GetComponent<NavMeshAgent>().isStopped = true;
+            yield return new WaitForSeconds(3f);
+        }
+        isStunned = false;
+        gameObject.GetComponent<NavMeshAgent>().isStopped = false;
     }
 }
