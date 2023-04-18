@@ -10,7 +10,7 @@ public class PauseMenu : MonoBehaviour
     private InputAction menu;
 
     [SerializeField] private GameObject pauseMenu;
-    [SerializeField] private bool isPaused;
+    public bool isPaused;
 
     private void Awake()
     {
@@ -29,7 +29,6 @@ public class PauseMenu : MonoBehaviour
     {
         menu.Disable();
     }
-
 
     public void Pause(InputAction.CallbackContext context)
     {

@@ -32,7 +32,7 @@ public class PlayerInput : MonoBehaviour
     private int count;
     [SerializeField] private MeshRenderer damageIndicator;
     public Image detectedSense;
-
+    [SerializeField] private PauseMenu pauseMenu;
     private float maxFallDistance = 10f;
 
     private void Awake()
@@ -50,7 +50,6 @@ public class PlayerInput : MonoBehaviour
         //Reads mouse input
         groundMovement.MouseX.performed += ctx => mouseInput.x = ctx.ReadValue<float>();
         groundMovement.MouseY.performed += ctx => mouseInput.y = ctx.ReadValue<float>();
-
         groundMovement.Sneak.performed += _ => movement.OnSneakPressed();
         groundMovement.Sprint.performed += _ => movement.OnSprintPressed();
         groundMovement.StunTaser.performed += _ => stunGun.OnStunPressed();
@@ -95,7 +94,14 @@ public class PlayerInput : MonoBehaviour
         {
             respawn();
         }
-
+        if(pauseMenu.isPaused == true)
+        {
+            controls.Disable();
+        }
+        else
+        {
+            controls.Enable();
+        }
     }
 
     private void OnTriggerEnter(Collider other)
