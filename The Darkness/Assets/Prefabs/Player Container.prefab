@@ -120,11 +120,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2185706714718288619}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.5409999, y: 1.54, z: 1.914}
-  m_LocalScale: {x: 0.16579251, y: 0.16579251, z: 0.994755}
+  m_LocalPosition: {x: 0, y: 0, z: 0.5140562}
+  m_LocalScale: {x: 0.7990001, y: 0.7990001, z: 0.79899997}
   m_Children: []
-  m_Father: {fileID: 5709507400491541605}
-  m_RootOrder: 3
+  m_Father: {fileID: 7607279079085760513}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &2691314839540605364
 MeshFilter:
@@ -460,6 +460,7 @@ GameObject:
   - component: {fileID: 8679410072903788111}
   - component: {fileID: -7936405843355478090}
   - component: {fileID: 6979054795806903269}
+  - component: {fileID: 2777039737205959437}
   m_Layer: 0
   m_Name: Player Container
   m_TagString: Player
@@ -481,7 +482,6 @@ Transform:
   - {fileID: 141934823422876758}
   - {fileID: 3867177996240633224}
   - {fileID: 4649725635096260138}
-  - {fileID: 2502321908448420404}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -565,6 +565,7 @@ MonoBehaviour:
   countText: {fileID: 0}
   loseText: {fileID: 0}
   damageIndicator: {fileID: 5340857804663380922}
+  detectedSense: {fileID: 0}
 --- !u!114 &-7936405843355478090
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -594,6 +595,20 @@ MonoBehaviour:
   stunTaser: {fileID: 2185706714718288619}
   stunAmmo: 0
   stunAmmoText: {fileID: 0}
+--- !u!114 &2777039737205959437
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6709386633734507235}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f181387265c0e04f9d0dae78a95c8ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  checkpoint: {fileID: 0}
+  levelEnd: {fileID: 0}
 --- !u!1 &6968804449465763178
 GameObject:
   m_ObjectHideFlags: 0
@@ -716,7 +731,8 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.5409999, y: -0.70000005, z: 1.274}
   m_LocalScale: {x: 0.2075, y: 0.2075, z: 1.245}
-  m_Children: []
+  m_Children:
+  - {fileID: 2502321908448420404}
   m_Father: {fileID: 141934823422876758}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
