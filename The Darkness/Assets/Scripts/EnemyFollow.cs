@@ -13,6 +13,8 @@ public class EnemyFollow : MonoBehaviour
     [SerializeField] private Movement playerSneaking; //To get the sneaking bool from the Movement script to stop the enemy from chasing when sneakings
     public bool isStunned = false;
     [SerializeField] private PlayerInput playerInput;
+    float yOffset = 1f;
+    
 
     private void Update()
     {
@@ -27,7 +29,9 @@ public class EnemyFollow : MonoBehaviour
                 gameObject.GetComponent<NavMeshAgent>().isStopped = false;
                 if (distanceToPlayer <= followRange)
                 {
-                    transform.LookAt(player.position);
+                    Vector3 targetPosition = player.position + Vector3.up * yOffset;
+
+                    transform.LookAt(targetPosition);
                     transform.position = Vector3.MoveTowards(transform.position, player.position, speed * Time.deltaTime);
                 }
             }

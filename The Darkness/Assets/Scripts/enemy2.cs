@@ -9,12 +9,15 @@ public class enemy2 : MonoBehaviour
     public float rotationSpeed = 5f; // The speed at which the enemy rotates towards the player.
     public float fieldOfViewAngle = 60f; // The angle of the enemy's field of view.
 
-    private Transform playerTransform; // The transform of the player.
+    private Transform playerTransform; 
     private bool canFollowPlayer = false; // Whether the enemy can follow the player.
+
+    
 
     void Start()
     {
         playerTransform = GameObject.FindGameObjectWithTag("Player").transform;
+       
     }
 
     void Update()
@@ -38,6 +41,7 @@ public class enemy2 : MonoBehaviour
             transform.position += transform.forward * speed * Time.deltaTime;
         }
     }
+    
 
     bool IsPlayerLookingAtEnemy()
     {
@@ -52,5 +56,6 @@ public class enemy2 : MonoBehaviour
             return false;
         }
     }
+    
 }
 
