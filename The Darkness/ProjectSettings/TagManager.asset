@@ -12,6 +12,7 @@ TagManager:
   - StunTaser
   - StunAmmo
   - Level End
+  - Door
   layers:
   - Default
   - TransparentFX
