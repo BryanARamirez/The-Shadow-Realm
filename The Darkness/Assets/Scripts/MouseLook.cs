@@ -1,12 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class MouseLook : MonoBehaviour
 {
-    [SerializeField] private float sensX = 8f;
-    [SerializeField] private float sensY = 0.5f;
+    public float sensX = 50f;
+    public float sensY = 0.5f;
     private float mouseX, mouseY;
+
+    [SerializeField] private Slider slider;
 
     [SerializeField] private Transform playerCamera;
     [SerializeField] private float xClamp = 85f;
@@ -20,6 +23,8 @@ public class MouseLook : MonoBehaviour
 
     private void Update()
     {
+        sensX = slider.value;
+        sensY = slider.value / 500;
         transform.Rotate(Vector3.up, mouseX * Time.deltaTime);
         //Helps clamp the camera so you can't look all the way behind yourself
         xRotation -= mouseY;

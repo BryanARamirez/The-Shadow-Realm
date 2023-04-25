@@ -26,4 +26,8 @@ public class ButtonManger : MonoBehaviour
         controlsMenu.SetActive(false);
         backMenu.SetActive(true);
     }
+    public void MainMenu()
+    {
+        SceneManager.LoadScene(0);
+    }
 }

@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using UnityEngine.UI;
 using UnityEngine.InputSystem;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PauseMenu : MonoBehaviour
 {
     private PlayerControls playerControls;
+    [SerializeField] private PlayerInput playerInput;
     private InputAction menu;
 
     [SerializeField] private GameObject pauseMenu;
@@ -47,13 +49,19 @@ public class PauseMenu : MonoBehaviour
     private void EnableMenu()
     {
         Time.timeScale = 0;
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
+        playerInput.enabled = false;
         pauseMenu.SetActive(true);
     }
 
-    private void DisableMenu()
+    public void DisableMenu()
     {
         Time.timeScale = 1;
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
         pauseMenu.SetActive(false);
+        playerInput.enabled = true;
         isPaused = false;
     }
 }

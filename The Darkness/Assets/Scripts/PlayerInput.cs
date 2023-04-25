@@ -26,7 +26,6 @@ public class PlayerInput : MonoBehaviour
     public int lives = 3;
     public Text healthText;
     public Text livesText;
-    public Text controlsText;
     public Text countText;
     public Text loseText;
     private int count;
@@ -34,6 +33,7 @@ public class PlayerInput : MonoBehaviour
     public Image detectedSense;
     [SerializeField] private PauseMenu pauseMenu;
     private float maxFallDistance = 10f;
+    [SerializeField] private GameObject GameOverCanvas;
 
     private void Awake()
     {
@@ -170,6 +170,8 @@ public class PlayerInput : MonoBehaviour
     }
     private void gameOver()
     {
-        loseText.text = "GameOver";
+        GameOverCanvas.SetActive(true);
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
     }
 }

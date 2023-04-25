@@ -328,7 +328,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 4230e2d49cd675f43b50654acc3ea715, type: 2}
+  - {fileID: 2100000, guid: eb1b9bef5b53686479760387d2f29d9c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -566,6 +566,7 @@ MonoBehaviour:
   loseText: {fileID: 0}
   damageIndicator: {fileID: 5340857804663380922}
   detectedSense: {fileID: 0}
+  pauseMenu: {fileID: 0}
 --- !u!114 &-7936405843355478090
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -578,6 +579,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1edc6a5f79202f94e9fa7ad3ce80c732, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerInput: {fileID: 0}
   pauseMenu: {fileID: 0}
   isPaused: 0
 --- !u!114 &6979054795806903269
