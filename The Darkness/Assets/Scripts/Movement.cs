@@ -20,10 +20,13 @@ public class Movement : MonoBehaviour
     public bool sneak;
     [SerializeField] private MeshRenderer Hand;
     [SerializeField] private GameObject player;
+    [SerializeField] private Text sneakChargeText;
 
     private float lastTime;
     private bool sprinting;
     private bool sneakReady;
+    public int sneakCharge;
+    public int sneakMax = 1;
     [SerializeField] private Image sneakActive;
 
 
@@ -92,11 +95,35 @@ public class Movement : MonoBehaviour
 
     public void OnSneakPressed()
     {
-        if((Time.time - lastTime > 9f) && sneakReady == true)
+        if (sneakCharge > 0)
         {
-            sneak = true;
-            sneakReady = false;
-            StartCoroutine(sneakTimer());
+            if((Time.time - lastTime > 9f) && sneakReady == true)
+            {
+                sneak = true;
+                sneakReady = false;
+                StartCoroutine(sneakTimer());
+            }
+        }
+        else
+        {
+            // Debug Log states "You are out of Sneak Charges!"
+        }
+    }
+
+    private void OnTriggerEnder(Collider other)
+    {
+        if (other.tag == "Sneak Charge")
+        {
+            if (sneakCharge < sneakMax)
+            {
+                sneakCharge++;
+                sneakChargeText.text = "Sneak Charges: " + sneakCharge.ToString();
+                Destroy(other.gameObject);
+            }
+            else
+            {
+                //Debug Log states "Your sneak Charges are Full!"
+            }
         }
     }
 

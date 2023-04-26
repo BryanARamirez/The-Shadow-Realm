@@ -13,6 +13,7 @@ TagManager:
   - StunAmmo
   - Level End
   - Door
+  - Sneak Charge
   layers:
   - Default
   - TransparentFX
