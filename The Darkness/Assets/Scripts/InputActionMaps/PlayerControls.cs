@@ -73,15 +73,6 @@ public partial class @PlayerControls : IInputActionCollection2, IDisposable
                     ""initialStateCheck"": false
                 },
                 {
-                    ""name"": ""Sprint"",
-                    ""type"": ""Button"",
-                    ""id"": ""7e77e800-c6b8-4f8c-9969-7541fe5fa0b2"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
-                },
-                {
                     ""name"": ""StunTaser"",
                     ""type"": ""Button"",
                     ""id"": ""4dcd2073-0a63-406f-a1cd-b7f4f5cdd2b5"",
@@ -193,17 +184,6 @@ public partial class @PlayerControls : IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": """",
-                    ""id"": ""f723d5ae-5901-45aa-9019-3b46512a03c9"",
-                    ""path"": ""<Keyboard>/shift"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Sprint"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
                     ""id"": ""f36ce7ed-beed-4375-b104-77fad12c2d57"",
                     ""path"": ""<Mouse>/middleButton"",
                     ""interactions"": """",
@@ -253,7 +233,6 @@ public partial class @PlayerControls : IInputActionCollection2, IDisposable
         m_GroundMovement_MouseY = m_GroundMovement.FindAction("MouseY", throwIfNotFound: true);
         m_GroundMovement_Jump = m_GroundMovement.FindAction("Jump", throwIfNotFound: true);
         m_GroundMovement_Sneak = m_GroundMovement.FindAction("Sneak", throwIfNotFound: true);
-        m_GroundMovement_Sprint = m_GroundMovement.FindAction("Sprint", throwIfNotFound: true);
         m_GroundMovement_StunTaser = m_GroundMovement.FindAction("StunTaser", throwIfNotFound: true);
         // Menu
         m_Menu = asset.FindActionMap("Menu", throwIfNotFound: true);
@@ -322,7 +301,6 @@ public partial class @PlayerControls : IInputActionCollection2, IDisposable
     private readonly InputAction m_GroundMovement_MouseY;
     private readonly InputAction m_GroundMovement_Jump;
     private readonly InputAction m_GroundMovement_Sneak;
-    private readonly InputAction m_GroundMovement_Sprint;
     private readonly InputAction m_GroundMovement_StunTaser;
     public struct GroundMovementActions
     {
@@ -333,7 +311,6 @@ public partial class @PlayerControls : IInputActionCollection2, IDisposable
         public InputAction @MouseY => m_Wrapper.m_GroundMovement_MouseY;
         public InputAction @Jump => m_Wrapper.m_GroundMovement_Jump;
         public InputAction @Sneak => m_Wrapper.m_GroundMovement_Sneak;
-        public InputAction @Sprint => m_Wrapper.m_GroundMovement_Sprint;
         public InputAction @StunTaser => m_Wrapper.m_GroundMovement_StunTaser;
         public InputActionMap Get() { return m_Wrapper.m_GroundMovement; }
         public void Enable() { Get().Enable(); }
@@ -359,9 +336,6 @@ public partial class @PlayerControls : IInputActionCollection2, IDisposable
                 @Sneak.started -= m_Wrapper.m_GroundMovementActionsCallbackInterface.OnSneak;
                 @Sneak.performed -= m_Wrapper.m_GroundMovementActionsCallbackInterface.OnSneak;
                 @Sneak.canceled -= m_Wrapper.m_GroundMovementActionsCallbackInterface.OnSneak;
-                @Sprint.started -= m_Wrapper.m_GroundMovementActionsCallbackInterface.OnSprint;
-                @Sprint.performed -= m_Wrapper.m_GroundMovementActionsCallbackInterface.OnSprint;
-                @Sprint.canceled -= m_Wrapper.m_GroundMovementActionsCallbackInterface.OnSprint;
                 @StunTaser.started -= m_Wrapper.m_GroundMovementActionsCallbackInterface.OnStunTaser;
                 @StunTaser.performed -= m_Wrapper.m_GroundMovementActionsCallbackInterface.OnStunTaser;
                 @StunTaser.canceled -= m_Wrapper.m_GroundMovementActionsCallbackInterface.OnStunTaser;
@@ -384,9 +358,6 @@ public partial class @PlayerControls : IInputActionCollection2, IDisposable
                 @Sneak.started += instance.OnSneak;
                 @Sneak.performed += instance.OnSneak;
                 @Sneak.canceled += instance.OnSneak;
-                @Sprint.started += instance.OnSprint;
-                @Sprint.performed += instance.OnSprint;
-                @Sprint.canceled += instance.OnSprint;
                 @StunTaser.started += instance.OnStunTaser;
                 @StunTaser.performed += instance.OnStunTaser;
                 @StunTaser.canceled += instance.OnStunTaser;
@@ -434,7 +405,6 @@ public partial class @PlayerControls : IInputActionCollection2, IDisposable
         void OnMouseY(InputAction.CallbackContext context);
         void OnJump(InputAction.CallbackContext context);
         void OnSneak(InputAction.CallbackContext context);
-        void OnSprint(InputAction.CallbackContext context);
         void OnStunTaser(InputAction.CallbackContext context);
     }
     public interface IMenuActions

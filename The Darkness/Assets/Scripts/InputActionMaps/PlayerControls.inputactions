@@ -51,15 +51,6 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "Sprint",
-                    "type": "Button",
-                    "id": "7e77e800-c6b8-4f8c-9969-7541fe5fa0b2",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                },
-                {
                     "name": "StunTaser",
                     "type": "Button",
                     "id": "4dcd2073-0a63-406f-a1cd-b7f4f5cdd2b5",
@@ -166,17 +157,6 @@
                     "processors": "",
                     "groups": "",
                     "action": "Sneak",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "f723d5ae-5901-45aa-9019-3b46512a03c9",
-                    "path": "<Keyboard>/shift",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Sprint",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },

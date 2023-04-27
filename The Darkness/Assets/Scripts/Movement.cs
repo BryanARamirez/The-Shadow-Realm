@@ -6,7 +6,7 @@ using UnityEngine;
 public class Movement : MonoBehaviour
 {
     [SerializeField] private CharacterController controller;
-    private float speed = 10f;
+    public float speed = 10f;
     private Vector2 horizontalInput;
 
     [SerializeField] private float jumpHeight = 5f;
@@ -23,7 +23,6 @@ public class Movement : MonoBehaviour
     [SerializeField] private Text sneakChargeText;
 
     private float lastTime;
-    private bool sprinting;
     private bool sneakReady;
     public int sneakCharge;
     public int sneakMax = 1;
@@ -61,13 +60,6 @@ public class Movement : MonoBehaviour
         if(sneak && (Time.time - lastTime > 9f))
         {
             StartCoroutine(invisible());
-        }
-
-        if(sprinting)
-        {
-            Debug.Log("Sprinting");
-            StartCoroutine(sprintTimer());
-            
         }
 
         verticalVelocity.y += gravity * Time.deltaTime;
@@ -148,19 +140,5 @@ public class Movement : MonoBehaviour
             yield return new WaitForSeconds(0.1f);
         }
         sneakReady = true;
-    }
-    public IEnumerator sprintTimer()
-    {
-        for (int index = 0; index < 20f; index++)
-        {
-            speed = 20f;
-            yield return new WaitForSeconds(.1f);
-        }
-        speed = 4f;
-        sprinting = false;
-    }
-    public void OnSprintPressed()
-    {
-        sprinting = true;
     }
 }

@@ -23388,6 +23388,23 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 8830015382773049001, guid: 5f73f5f8231ce484c860b42ec1d7e10f, type: 3}
+      propertyPath: m_Text
+      value: 'Controls:
+
+        Movement = WASD
+
+        Jump = Space
+
+        Sprint
+        = Shift
+
+        Sneak = E
+
+        Pause = Esc
+
+        Middle Click = StunTaser'
+      objectReference: {fileID: 0}
     - target: {fileID: 8830015383104368808, guid: 5f73f5f8231ce484c860b42ec1d7e10f, type: 3}
       propertyPath: m_Name
       value: CheckControlsCanvas

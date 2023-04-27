@@ -461,6 +461,7 @@ GameObject:
   - component: {fileID: -7936405843355478090}
   - component: {fileID: 6979054795806903269}
   - component: {fileID: 2777039737205959437}
+  - component: {fileID: 2710168668156306655}
   m_Layer: 0
   m_Name: Player Container
   m_TagString: Player
@@ -516,6 +517,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   controller: {fileID: 4168718771159613096}
+  speed: 10
   jumpHeight: 1
   gravity: -9.81
   groundMask:
@@ -524,6 +526,9 @@ MonoBehaviour:
   sneak: 0
   Hand: {fileID: 4924004826332253482}
   player: {fileID: 0}
+  sneakChargeText: {fileID: 0}
+  sneakCharge: 0
+  sneakMax: 1
   sneakActive: {fileID: 0}
 --- !u!114 &8019499425840857730
 MonoBehaviour:
@@ -539,6 +544,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sensX: 50
   sensY: 0.1
+  slider: {fileID: 0}
   playerCamera: {fileID: 141934823422876758}
   xClamp: 85
 --- !u!114 &8679410072903788111
@@ -561,12 +567,12 @@ MonoBehaviour:
   lives: 3
   healthText: {fileID: 0}
   livesText: {fileID: 0}
-  controlsText: {fileID: 0}
   countText: {fileID: 0}
   loseText: {fileID: 0}
   damageIndicator: {fileID: 5340857804663380922}
   detectedSense: {fileID: 0}
   pauseMenu: {fileID: 0}
+  GameOverCanvas: {fileID: 0}
 --- !u!114 &-7936405843355478090
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -611,6 +617,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   checkpoint: {fileID: 0}
   levelEnd: {fileID: 0}
+--- !u!114 &2710168668156306655
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6709386633734507235}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3001a186cca4d1b4aa72510340295988, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  staminaBar: {fileID: 0}
 --- !u!1 &6968804449465763178
 GameObject:
   m_ObjectHideFlags: 0

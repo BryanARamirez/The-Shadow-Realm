@@ -622,6 +622,10 @@ PrefabInstance:
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2710168668156306655, guid: 432a49b4cb733504fa423d0e1ec3928e, type: 3}
+      propertyPath: staminaBar
+      value: 
+      objectReference: {fileID: 1516828389}
     - target: {fileID: 2777039737205959437, guid: 432a49b4cb733504fa423d0e1ec3928e, type: 3}
       propertyPath: levelEnd
       value: 
@@ -745,6 +749,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 91aa2fc40cc0bbf42aebdc74514785a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1516828389 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5834014643941597191, guid: 6481cb35e2192184c8481236f35a7b7e, type: 3}
+  m_PrefabInstance: {fileID: 6885774290468302989}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &1554999742

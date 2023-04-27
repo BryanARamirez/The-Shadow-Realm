@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.UI;
-using UnityEngine.SceneManagement;
 using UnityEngine;
 
 public class PlayerInput : MonoBehaviour
@@ -51,7 +50,6 @@ public class PlayerInput : MonoBehaviour
         groundMovement.MouseX.performed += ctx => mouseInput.x = ctx.ReadValue<float>();
         groundMovement.MouseY.performed += ctx => mouseInput.y = ctx.ReadValue<float>();
         groundMovement.Sneak.performed += _ => movement.OnSneakPressed();
-        groundMovement.Sprint.performed += _ => movement.OnSprintPressed();
         groundMovement.StunTaser.performed += _ => stunGun.OnStunPressed();
         damageIndicator.enabled = false;
         SetCountText();
