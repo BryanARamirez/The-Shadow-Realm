@@ -13,6 +13,7 @@ public class PauseMenu : MonoBehaviour
 
     [SerializeField] private GameObject pauseMenu;
     public bool isPaused;
+    public bool controlsUp;
 
     private void Awake()
     {
@@ -42,7 +43,10 @@ public class PauseMenu : MonoBehaviour
         }
         else
         {
-            DisableMenu();
+            if(controlsUp == false)
+            {
+                DisableMenu();
+            }
         }
     }
 

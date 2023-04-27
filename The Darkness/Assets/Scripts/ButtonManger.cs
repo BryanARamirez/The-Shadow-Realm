@@ -7,6 +7,7 @@ public class ButtonManger : MonoBehaviour
 {
     [SerializeField] private GameObject backMenu;
     [SerializeField] private GameObject controlsMenu;
+    [SerializeField] private PauseMenu playerContainer;
 
     public void StartGame()
     {
@@ -20,11 +21,13 @@ public class ButtonManger : MonoBehaviour
     {
         controlsMenu.SetActive(true);
         backMenu.SetActive(false);
+        playerContainer.controlsUp = true;
     }
     public void Back()
     {
         controlsMenu.SetActive(false);
         backMenu.SetActive(true);
+        playerContainer.controlsUp = false;
     }
     public void MainMenu()
     {

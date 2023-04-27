@@ -14,7 +14,7 @@ public class StunGun : MonoBehaviour
     private void Awake()
     {
         stunAmmo = 3;
-        stunAmmoText.text = "Stun Ammo: " + stunAmmo.ToString();
+        stunAmmoText.text = "Stun Ammo: " + stunAmmo.ToString() + "/3";
     }
 
     public void OnStunPressed()
@@ -31,12 +31,13 @@ public class StunGun : MonoBehaviour
         for (int index = 0; index < 1f; index++)
         {
             stunTaser.SetActive(true);
-            yield return new WaitForSeconds(2f);
+            stunAmmo--;
+            stunAmmoText.text = "Stun Ammo: " + stunAmmo.ToString() + "/3";
+            yield return new WaitForSeconds(3f);
         }
-        stunAmmo--;
         stunTaser.SetActive(false);
         isInUse = false;
-        stunAmmoText.text = "Stun Ammo: " + stunAmmo.ToString();
+        stunAmmoText.text = "Stun Ammo: " + stunAmmo.ToString() + "/3";
     }
     private void OnTriggerEnter(Collider other)
     {
@@ -45,7 +46,7 @@ public class StunGun : MonoBehaviour
             if(stunAmmo < 3)
             {
                 stunAmmo++;
-                stunAmmoText.text = "Stun Ammo: " + stunAmmo.ToString();
+                stunAmmoText.text = "Stun Ammo: " + stunAmmo.ToString() + "/3";
                 Destroy(other.gameObject);
             }
         }

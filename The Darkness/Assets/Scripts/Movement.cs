@@ -34,6 +34,8 @@ public class Movement : MonoBehaviour
     {
         lastTime = Time.time;
         StartCoroutine(sneakTimer());
+        sneakCharge = 1;
+        sneakChargeText.text = "Sneak Charges: " + sneakCharge.ToString() + "/1";
     }
 
     private void Update()
@@ -57,7 +59,7 @@ public class Movement : MonoBehaviour
             jump = false;
         }
 
-        if(sneak && (Time.time - lastTime > 9f))
+        if(sneak && (Time.time - lastTime > 5f))
         {
             StartCoroutine(invisible());
         }
@@ -89,10 +91,12 @@ public class Movement : MonoBehaviour
     {
         if (sneakCharge > 0)
         {
-            if((Time.time - lastTime > 9f) && sneakReady == true)
+            if((Time.time - lastTime > 5f) && sneakReady == true)
             {
                 sneak = true;
                 sneakReady = false;
+                sneakCharge--;
+                sneakChargeText.text = "Sneak Charges: " + sneakCharge.ToString() + "/1";
                 StartCoroutine(sneakTimer());
             }
         }
@@ -102,14 +106,14 @@ public class Movement : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnder(Collider other)
+    private void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Sneak Charge")
         {
             if (sneakCharge < sneakMax)
             {
                 sneakCharge++;
-                sneakChargeText.text = "Sneak Charges: " + sneakCharge.ToString();
+                sneakChargeText.text = "Sneak Charges: " + sneakCharge.ToString() + "/1";
                 Destroy(other.gameObject);
             }
             else
@@ -121,11 +125,11 @@ public class Movement : MonoBehaviour
 
     public IEnumerator invisible()
     {
-        for (int index = 0; index < 15; index++)
+        for (int index = 0; index < 1; index++)
         {
             Hand.enabled = false;
             player.SetActive(false);
-            yield return new WaitForSeconds(.1f);
+            yield return new WaitForSeconds(5f);
         }
         Hand.enabled = true;
         player.SetActive(false);
@@ -135,9 +139,9 @@ public class Movement : MonoBehaviour
     private IEnumerator sneakTimer()
     {
         Debug.Log("Sneak Timer Started");
-        for (int index = 0; index < 150f; index++)
+        for (int index = 0; index < 1f; index++)
         {
-            yield return new WaitForSeconds(0.1f);
+            yield return new WaitForSeconds(5f);
         }
         sneakReady = true;
     }

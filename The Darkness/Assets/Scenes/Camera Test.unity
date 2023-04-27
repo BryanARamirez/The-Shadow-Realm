@@ -123,6 +123,17 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 23800000, guid: 237c45faa9c272541bfc0297a62334f9, type: 2}
+--- !u!114 &161279918 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3132787084491338263, guid: 6481cb35e2192184c8481236f35a7b7e, type: 3}
+  m_PrefabInstance: {fileID: 6885774290468302989}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &183137045 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4664271012655829633, guid: 5f73f5f8231ce484c860b42ec1d7e10f, type: 3}
@@ -610,6 +621,10 @@ PrefabInstance:
       propertyPath: sprintActive
       value: 
       objectReference: {fileID: 4720553132837223228}
+    - target: {fileID: 2134573846112925760, guid: 432a49b4cb733504fa423d0e1ec3928e, type: 3}
+      propertyPath: sneakChargeText
+      value: 
+      objectReference: {fileID: 161279918}
     - target: {fileID: 2185706714718288619, guid: 432a49b4cb733504fa423d0e1ec3928e, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -656,7 +671,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5709507400491541605, guid: 432a49b4cb733504fa423d0e1ec3928e, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -13.74
+      value: -8.04
       objectReference: {fileID: 0}
     - target: {fileID: 6709386633734507235, guid: 432a49b4cb733504fa423d0e1ec3928e, type: 3}
       propertyPath: m_Layer
@@ -1221,9 +1236,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8109503085665027955}
     - target: {fileID: 6539125239763518422, guid: 0f17ef45f0503b145ba23eb563cf87e2, type: 3}
+      propertyPath: pauseMenu
+      value: 
+      objectReference: {fileID: 317052582}
+    - target: {fileID: 6539125239763518422, guid: 0f17ef45f0503b145ba23eb563cf87e2, type: 3}
       propertyPath: controlsMenu
       value: 
       objectReference: {fileID: 880809434}
+    - target: {fileID: 6539125239763518422, guid: 0f17ef45f0503b145ba23eb563cf87e2, type: 3}
+      propertyPath: playerContainer
+      value: 
+      objectReference: {fileID: 317052582}
     - target: {fileID: 6539125239763518423, guid: 0f17ef45f0503b145ba23eb563cf87e2, type: 3}
       propertyPath: m_Name
       value: ButtonManger
