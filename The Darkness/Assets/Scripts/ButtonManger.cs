@@ -7,6 +7,8 @@ public class ButtonManger : MonoBehaviour
 {
     [SerializeField] private GameObject backMenu;
     [SerializeField] private GameObject controlsMenu;
+    [SerializeField] private GameObject backToControls;
+    [SerializeField] private GameObject abilitiesMenu;
     [SerializeField] private PauseMenu playerContainer;
 
     public void StartGame()
@@ -32,5 +34,15 @@ public class ButtonManger : MonoBehaviour
     public void MainMenu()
     {
         SceneManager.LoadScene(0);
+    }
+    public void CheckAbilities()
+    {
+        abilitiesMenu.SetActive(true);
+        backToControls.SetActive(false);
+    }
+    public void CloseAbilities()
+    {
+        abilitiesMenu.SetActive(false);
+        backToControls.SetActive(true);
     }
 }
