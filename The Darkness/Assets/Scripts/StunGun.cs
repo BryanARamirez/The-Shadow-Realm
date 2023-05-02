@@ -10,6 +10,8 @@ public class StunGun : MonoBehaviour
     public int stunAmmo;
     [SerializeField] private Text stunAmmoText;
     private bool isInUse = false;
+    [SerializeField] private GameObject ammoFullTextGO;
+    [SerializeField] private Text ammoFullText;
 
     private void Awake()
     {
@@ -49,6 +51,17 @@ public class StunGun : MonoBehaviour
                 stunAmmoText.text = "Stun Ammo: " + stunAmmo.ToString() + "/3";
                 Destroy(other.gameObject);
             }
+            else
+            {
+                ammoFullText.text = "Stun Ammo Full";
+                ammoFullTextGO.SetActive(true);
+                Invoke("ammoFullTextOn", 2f);
+            }
         }
+    }
+
+    private void ammoFullTextOn()
+    {
+        ammoFullTextGO.SetActive(false);
     }
 }

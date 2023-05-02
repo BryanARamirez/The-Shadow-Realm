@@ -27,7 +27,8 @@ public class Movement : MonoBehaviour
     public int sneakCharge;
     public int sneakMax = 1;
     [SerializeField] private Image sneakActive;
-
+    [SerializeField] private GameObject ammoFullTextGO;
+    [SerializeField] private Text ammoFullText;
 
 
     private void Awake()
@@ -118,7 +119,9 @@ public class Movement : MonoBehaviour
             }
             else
             {
-                //Debug Log states "Your sneak Charges are Full!"
+                ammoFullText.text = "Sneak Charges Full";
+                ammoFullTextGO.SetActive(true);
+                Invoke("ammoFullTextOn", 2f);
             }
         }
     }
@@ -144,5 +147,9 @@ public class Movement : MonoBehaviour
             yield return new WaitForSeconds(5f);
         }
         sneakReady = true;
+    }
+    private void ammoFullTextOn()
+    {
+        ammoFullTextGO.SetActive(false);
     }
 }
