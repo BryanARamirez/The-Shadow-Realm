@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 2068680776714538310}
   - component: {fileID: 2068680776714538311}
   - component: {fileID: 2068680776714538312}
+  - component: {fileID: -5353067008039813212}
   m_Layer: 0
   m_Name: SlowMonster
   m_TagString: slowMonster
@@ -115,6 +116,8 @@ MonoBehaviour:
   followRange: 20
   speed: 3
   playerSneaking: {fileID: 0}
+  isStunned: 0
+  playerInput: {fileID: 0}
 --- !u!195 &2068680776714538312
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -137,3 +140,17 @@ NavMeshAgent:
   m_BaseOffset: 1
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!114 &-5353067008039813212
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2068680776714538313}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da8d8c4c49cfe0f4ebd89262d9725ae8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wanderRadius: 7
+  wanderTimer: 6
