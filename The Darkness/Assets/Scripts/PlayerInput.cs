@@ -31,7 +31,7 @@ public class PlayerInput : MonoBehaviour
     [SerializeField] private MeshRenderer damageIndicator;
     public Image detectedSense;
     [SerializeField] private PauseMenu pauseMenu;
-    private float maxFallDistance = 10f;
+    private float maxFallDistance = 100f;
     [SerializeField] private GameObject GameOverCanvas;
 
     private void Awake()
