@@ -14,6 +14,7 @@ TagManager:
   - Level End
   - Door
   - Sneak Charge
+  - Elevator
   layers:
   - Default
   - TransparentFX

@@ -126,7 +126,10 @@ public class PlayerInput : MonoBehaviour
             enemyDamage = 15;
             takeDamage();
         }
-
+        if(other.tag == "Elevator")
+        {
+            Debug.Log("Elevator");
+        }
     }
 
     public IEnumerator damageIndicatorShowing()
