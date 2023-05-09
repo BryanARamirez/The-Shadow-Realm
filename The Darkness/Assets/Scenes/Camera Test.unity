@@ -1268,10 +1268,12 @@ MonoBehaviour:
   ElevatorGO: {fileID: 0}
   ElevatorUpPos: {fileID: 0}
   ElevatorDownPos: {fileID: 0}
+  playerInputScript: {fileID: 0}
   isGoingUp: 0
   isGoingDown: 0
   isDown: 0
   isUp: 0
+  currentLives: 0
 --- !u!64 &1677167912
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1595,6 +1597,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4388440453378433319, guid: 78753d9cbda54ba4e91c35875a3c856f, type: 3}
+      propertyPath: playerInputScript
+      value: 
+      objectReference: {fileID: 947076452}
     - target: {fileID: 4388440453476280233, guid: 78753d9cbda54ba4e91c35875a3c856f, type: 3}
       propertyPath: m_Name
       value: Elevator Container

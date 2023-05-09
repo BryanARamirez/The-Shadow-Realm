@@ -7,11 +7,13 @@ public class Elevator : MonoBehaviour
     [SerializeField] private GameObject ElevatorGO;
     [SerializeField] private GameObject ElevatorUpPos;
     [SerializeField] private GameObject ElevatorDownPos;
+    [SerializeField] private PlayerInput playerInputScript;
     private float speed = 3;
     public bool isGoingUp;
     public bool isGoingDown;
     public bool isDown;
     public bool isUp;
+    public int currentLives;
 
     private void Awake()
     {
@@ -19,6 +21,7 @@ public class Elevator : MonoBehaviour
         isGoingDown = false;
         isDown = true;
         isUp = false;
+        currentLives = playerInputScript.lives;
     }
 
     private void Update()
@@ -40,6 +43,16 @@ public class Elevator : MonoBehaviour
         {
             isDown = true;
             isUp = false;
+        }
+        if(currentLives > playerInputScript.lives)
+        {
+            isGoingDown = true;
+            isGoingUp = false;
+            if (transform.position.y == ElevatorDownPos.transform.position.y)
+            {
+                isGoingDown = false;
+                currentLives--;
+            }
         }
     }
 
