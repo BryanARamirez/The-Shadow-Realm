@@ -518,8 +518,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   controller: {fileID: 4168718771159613096}
   speed: 10
-  jumpHeight: 1
-  gravity: -9.81
+  jumpHeight: 3
+  gravity: -36
   groundMask:
     serializedVersion: 2
     m_Bits: 64
@@ -530,6 +530,8 @@ MonoBehaviour:
   sneakCharge: 0
   sneakMax: 1
   sneakActive: {fileID: 0}
+  ammoFullTextGO: {fileID: 0}
+  ammoFullText: {fileID: 0}
 --- !u!114 &8019499425840857730
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -544,6 +546,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sensX: 50
   sensY: 0.1
+  pauseMenuScript: {fileID: 0}
   slider: {fileID: 0}
   playerCamera: {fileID: 141934823422876758}
   xClamp: 85
@@ -588,6 +591,7 @@ MonoBehaviour:
   playerInput: {fileID: 0}
   pauseMenu: {fileID: 0}
   isPaused: 0
+  controlsUp: 0
 --- !u!114 &6979054795806903269
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -603,6 +607,8 @@ MonoBehaviour:
   stunTaser: {fileID: 2185706714718288619}
   stunAmmo: 0
   stunAmmoText: {fileID: 0}
+  ammoFullTextGO: {fileID: 0}
+  ammoFullText: {fileID: 0}
 --- !u!114 &2777039737205959437
 MonoBehaviour:
   m_ObjectHideFlags: 0
