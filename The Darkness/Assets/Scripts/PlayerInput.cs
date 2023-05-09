@@ -27,7 +27,7 @@ public class PlayerInput : MonoBehaviour
     public Text livesText;
     public Text countText;
     public Text loseText;
-    private int count;
+    private int keyCount;
     [SerializeField] private MeshRenderer damageIndicator;
     public Image detectedSense;
     [SerializeField] private PauseMenu pauseMenu;
@@ -56,7 +56,7 @@ public class PlayerInput : MonoBehaviour
     }
     private void Start()
     {
-        count = 0;
+        keyCount = 0;
         SetCountText();
     }
     //When players is spawned in enable the controls 
@@ -113,7 +113,7 @@ public class PlayerInput : MonoBehaviour
         if (other.gameObject.CompareTag("Key"))
         {
             other.gameObject.SetActive(false);
-            count = count + 1;
+            keyCount = keyCount + 1;
             SetCountText();
         }
         if (other.gameObject.CompareTag("Respawn Point"))
@@ -148,7 +148,7 @@ public class PlayerInput : MonoBehaviour
     {
         healthText.text = "Health:" + playerHealth.ToString();
         livesText.text = "Lives: " + lives.ToString();
-        countText.text = "Count:" + count.ToString();
+        countText.text = "Keys Held: " + keyCount.ToString();
     }
     private void takeDamage()
     {
