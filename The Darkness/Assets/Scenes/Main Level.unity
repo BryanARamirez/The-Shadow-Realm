@@ -80977,6 +80977,10 @@ PrefabInstance:
       propertyPath: slider
       value: 
       objectReference: {fileID: 1733844441}
+    - target: {fileID: 8019499425840857730, guid: 432a49b4cb733504fa423d0e1ec3928e, type: 3}
+      propertyPath: pauseMenuScript
+      value: 
+      objectReference: {fileID: 1875180301}
     - target: {fileID: 8679410072903788111, guid: 432a49b4cb733504fa423d0e1ec3928e, type: 3}
       propertyPath: stunGun
       value: 
