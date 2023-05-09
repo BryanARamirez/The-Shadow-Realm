@@ -61,7 +61,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: fbda8289e3a25b844b9ca1add596dfc2, type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: Respawn Point
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fbda8289e3a25b844b9ca1add596dfc2, type: 3}
