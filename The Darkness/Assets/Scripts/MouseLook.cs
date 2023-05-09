@@ -25,8 +25,8 @@ public class MouseLook : MonoBehaviour
 
     private void Update()
     {
-        sensX = slider.value / 8;
-        sensY = slider.value / 500;
+        sensX = slider.value / 1.5f;
+        sensY = slider.value / 600;
         //transform.Rotate(Vector3.up, mouseX * Time.deltaTime);
         //Helps clamp the camera so you can't look all the way behind yourself
         if(pauseMenuScript.isPaused == false)
