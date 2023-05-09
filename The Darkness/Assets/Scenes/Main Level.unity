@@ -11951,14 +11951,22 @@ PrefabInstance:
     - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
       propertyPath: player
       value: 
+      objectReference: {fileID: 762579924}
+    - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
+      propertyPath: followRange
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
       propertyPath: playerInput
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1875180302}
     - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
       propertyPath: playerSneaking
       value: 
+      objectReference: {fileID: 762579926}
+    - target: {fileID: 8222422230528054107, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
+      propertyPath: MaxDistance
+      value: 15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
@@ -12262,14 +12270,22 @@ PrefabInstance:
     - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
       propertyPath: player
       value: 
+      objectReference: {fileID: 762579924}
+    - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
+      propertyPath: followRange
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
       propertyPath: playerInput
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1875180302}
     - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
       propertyPath: playerSneaking
       value: 
+      objectReference: {fileID: 762579926}
+    - target: {fileID: 8222422230528054107, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
+      propertyPath: MaxDistance
+      value: 15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
@@ -12902,6 +12918,26 @@ PrefabInstance:
     - target: {fileID: 3145773577174369668, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 762579924}
+    - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
+      propertyPath: followRange
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
+      propertyPath: playerInput
+      value: 
+      objectReference: {fileID: 1875180302}
+    - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
+      propertyPath: playerSneaking
+      value: 
+      objectReference: {fileID: 762579926}
+    - target: {fileID: 8222422230528054107, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
+      propertyPath: MaxDistance
+      value: 15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
@@ -16656,18 +16692,22 @@ PrefabInstance:
     - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 762579924}
     - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
       propertyPath: followRange
-      value: 2
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
       propertyPath: playerInput
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1875180302}
     - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
       propertyPath: playerSneaking
       value: 
+      objectReference: {fileID: 762579926}
+    - target: {fileID: 8222422230528054107, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
+      propertyPath: MaxDistance
+      value: 15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
@@ -17085,18 +17125,22 @@ PrefabInstance:
     - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 762579924}
     - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
       propertyPath: followRange
-      value: 2
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
       propertyPath: playerInput
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1875180302}
     - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
       propertyPath: playerSneaking
       value: 
+      objectReference: {fileID: 762579926}
+    - target: {fileID: 8222422230528054107, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
+      propertyPath: MaxDistance
+      value: 15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
@@ -17737,18 +17781,22 @@ PrefabInstance:
     - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 762579924}
     - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
       propertyPath: followRange
-      value: 2
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
       propertyPath: playerInput
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1875180302}
     - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
       propertyPath: playerSneaking
       value: 
+      objectReference: {fileID: 762579926}
+    - target: {fileID: 8222422230528054107, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
+      propertyPath: MaxDistance
+      value: 15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
@@ -18705,18 +18753,22 @@ PrefabInstance:
     - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 762579924}
     - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
       propertyPath: followRange
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
       propertyPath: playerInput
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1875180302}
     - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
       propertyPath: playerSneaking
       value: 
+      objectReference: {fileID: 762579926}
+    - target: {fileID: 8222422230528054107, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
+      propertyPath: MaxDistance
+      value: 15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
@@ -20769,18 +20821,22 @@ PrefabInstance:
     - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 762579924}
     - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
       propertyPath: followRange
-      value: 2
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
       propertyPath: playerInput
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1875180302}
     - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
       propertyPath: playerSneaking
       value: 
+      objectReference: {fileID: 762579926}
+    - target: {fileID: 8222422230528054107, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
+      propertyPath: MaxDistance
+      value: 15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
@@ -28751,6 +28807,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2009940608}
     m_Modifications:
+    - target: {fileID: 4388440453378433319, guid: 78753d9cbda54ba4e91c35875a3c856f, type: 3}
+      propertyPath: playerInputScript
+      value: 
+      objectReference: {fileID: 1875180302}
     - target: {fileID: 4388440453476280233, guid: 78753d9cbda54ba4e91c35875a3c856f, type: 3}
       propertyPath: m_Name
       value: Elevator Container
@@ -32049,14 +32109,22 @@ PrefabInstance:
     - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
       propertyPath: player
       value: 
+      objectReference: {fileID: 762579924}
+    - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
+      propertyPath: followRange
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
       propertyPath: playerInput
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1875180302}
     - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
       propertyPath: playerSneaking
       value: 
+      objectReference: {fileID: 762579926}
+    - target: {fileID: 8222422230528054107, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
+      propertyPath: MaxDistance
+      value: 15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
@@ -38831,18 +38899,22 @@ PrefabInstance:
     - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 762579924}
     - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
       propertyPath: followRange
-      value: 2
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
       propertyPath: playerInput
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1875180302}
     - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
       propertyPath: playerSneaking
       value: 
+      objectReference: {fileID: 762579926}
+    - target: {fileID: 8222422230528054107, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
+      propertyPath: MaxDistance
+      value: 15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
@@ -39482,6 +39554,22 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 760030440}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &762579924 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5709507400491541605, guid: 432a49b4cb733504fa423d0e1ec3928e, type: 3}
+  m_PrefabInstance: {fileID: 1550516557}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &762579926 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2134573846112925760, guid: 432a49b4cb733504fa423d0e1ec3928e, type: 3}
+  m_PrefabInstance: {fileID: 1550516557}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1cda3feebb507574ca2a5a221334a3bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &764319620
 GameObject:
   m_ObjectHideFlags: 0
@@ -46716,6 +46804,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 762579924}
+    - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
+      propertyPath: followRange
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
+      propertyPath: playerInput
+      value: 
+      objectReference: {fileID: 1875180302}
+    - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
+      propertyPath: playerSneaking
+      value: 
+      objectReference: {fileID: 762579926}
+    - target: {fileID: 8222422230528054107, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
+      propertyPath: MaxDistance
+      value: 15
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
 --- !u!4 &888795464 stripped
@@ -47631,6 +47739,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 762579924}
+    - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
+      propertyPath: followRange
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
+      propertyPath: playerInput
+      value: 
+      objectReference: {fileID: 1875180302}
+    - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
+      propertyPath: playerSneaking
+      value: 
+      objectReference: {fileID: 762579926}
+    - target: {fileID: 8222422230528054107, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
+      propertyPath: MaxDistance
+      value: 15
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
 --- !u!4 &913839965 stripped
@@ -48142,18 +48270,22 @@ PrefabInstance:
     - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 762579924}
     - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
       propertyPath: followRange
-      value: 3
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
       propertyPath: playerInput
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1875180302}
     - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
       propertyPath: playerSneaking
       value: 
+      objectReference: {fileID: 762579926}
+    - target: {fileID: 8222422230528054107, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
+      propertyPath: MaxDistance
+      value: 15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
@@ -52153,14 +52285,22 @@ PrefabInstance:
     - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
       propertyPath: player
       value: 
+      objectReference: {fileID: 762579924}
+    - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
+      propertyPath: followRange
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
       propertyPath: playerInput
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1875180302}
     - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
       propertyPath: playerSneaking
       value: 
+      objectReference: {fileID: 762579926}
+    - target: {fileID: 8222422230528054107, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
+      propertyPath: MaxDistance
+      value: 15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
@@ -63284,6 +63424,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 762579924}
+    - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
+      propertyPath: followRange
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
+      propertyPath: playerInput
+      value: 
+      objectReference: {fileID: 1875180302}
+    - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
+      propertyPath: playerSneaking
+      value: 
+      objectReference: {fileID: 762579926}
+    - target: {fileID: 8222422230528054107, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
+      propertyPath: MaxDistance
+      value: 15
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
 --- !u!4 &1221376232 stripped
@@ -63979,14 +64139,22 @@ PrefabInstance:
     - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
       propertyPath: player
       value: 
+      objectReference: {fileID: 762579924}
+    - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
+      propertyPath: followRange
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
       propertyPath: playerInput
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1875180302}
     - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
       propertyPath: playerSneaking
       value: 
+      objectReference: {fileID: 762579926}
+    - target: {fileID: 8222422230528054107, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
+      propertyPath: MaxDistance
+      value: 15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
@@ -64821,6 +64989,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2056994342258097050, guid: 6481cb35e2192184c8481236f35a7b7e, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 297
+      objectReference: {fileID: 0}
     - target: {fileID: 3148673537799487065, guid: 6481cb35e2192184c8481236f35a7b7e, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 1
@@ -64956,6 +65128,30 @@ PrefabInstance:
     - target: {fileID: 8587232471618469998, guid: 6481cb35e2192184c8481236f35a7b7e, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: ExitGame
+      objectReference: {fileID: 0}
+    - target: {fileID: 8667205744101032559, guid: 6481cb35e2192184c8481236f35a7b7e, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8667205744101032559, guid: 6481cb35e2192184c8481236f35a7b7e, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8667205744101032559, guid: 6481cb35e2192184c8481236f35a7b7e, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8667205744101032559, guid: 6481cb35e2192184c8481236f35a7b7e, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8667205744101032559, guid: 6481cb35e2192184c8481236f35a7b7e, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -50
+      objectReference: {fileID: 0}
+    - target: {fileID: 8667205744101032559, guid: 6481cb35e2192184c8481236f35a7b7e, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -50
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6481cb35e2192184c8481236f35a7b7e, type: 3}
@@ -72095,6 +72291,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 762579924}
+    - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
+      propertyPath: followRange
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
+      propertyPath: playerInput
+      value: 
+      objectReference: {fileID: 1875180302}
+    - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
+      propertyPath: playerSneaking
+      value: 
+      objectReference: {fileID: 762579926}
+    - target: {fileID: 8222422230528054107, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
+      propertyPath: MaxDistance
+      value: 15
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
 --- !u!4 &1382033300 stripped
@@ -75734,18 +75950,22 @@ PrefabInstance:
     - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 762579924}
     - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
       propertyPath: followRange
-      value: 2
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
       propertyPath: playerInput
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1875180302}
     - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
       propertyPath: playerSneaking
       value: 
+      objectReference: {fileID: 762579926}
+    - target: {fileID: 8222422230528054107, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
+      propertyPath: MaxDistance
+      value: 15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
@@ -76267,18 +76487,22 @@ PrefabInstance:
     - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 762579924}
     - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
       propertyPath: followRange
-      value: 2
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
       propertyPath: playerInput
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1875180302}
     - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
       propertyPath: playerSneaking
       value: 
+      objectReference: {fileID: 762579926}
+    - target: {fileID: 8222422230528054107, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
+      propertyPath: MaxDistance
+      value: 15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
@@ -76971,18 +77195,22 @@ PrefabInstance:
     - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 762579924}
     - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
       propertyPath: followRange
-      value: 2
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
       propertyPath: playerInput
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1875180302}
     - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
       propertyPath: playerSneaking
       value: 
+      objectReference: {fileID: 762579926}
+    - target: {fileID: 8222422230528054107, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
+      propertyPath: MaxDistance
+      value: 15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
@@ -77899,6 +78127,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 762579924}
+    - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
+      propertyPath: followRange
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
+      propertyPath: playerInput
+      value: 
+      objectReference: {fileID: 1875180302}
+    - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
+      propertyPath: playerSneaking
+      value: 
+      objectReference: {fileID: 762579926}
+    - target: {fileID: 8222422230528054107, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
+      propertyPath: MaxDistance
+      value: 15
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
 --- !u!4 &1505175885 stripped
@@ -78055,6 +78303,26 @@ PrefabInstance:
     - target: {fileID: 3145773577174369668, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 762579924}
+    - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
+      propertyPath: followRange
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
+      propertyPath: playerInput
+      value: 
+      objectReference: {fileID: 1875180302}
+    - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
+      propertyPath: playerSneaking
+      value: 
+      objectReference: {fileID: 762579926}
+    - target: {fileID: 8222422230528054107, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
+      propertyPath: MaxDistance
+      value: 15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
@@ -79291,6 +79559,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6019381537779604539, guid: c374de61d2ae94e4ea478516a697b7bd, type: 3}
+      propertyPath: playerInputScript
+      value: 
+      objectReference: {fileID: 1875180302}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c374de61d2ae94e4ea478516a697b7bd, type: 3}
 --- !u!1 &1531328755
@@ -83778,18 +84050,22 @@ PrefabInstance:
     - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 762579924}
     - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
       propertyPath: followRange
-      value: 2
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
       propertyPath: playerInput
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1875180302}
     - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
       propertyPath: playerSneaking
       value: 
+      objectReference: {fileID: 762579926}
+    - target: {fileID: 8222422230528054107, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
+      propertyPath: MaxDistance
+      value: 15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
@@ -84329,14 +84605,22 @@ PrefabInstance:
     - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
       propertyPath: player
       value: 
+      objectReference: {fileID: 762579924}
+    - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
+      propertyPath: followRange
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
       propertyPath: playerInput
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1875180302}
     - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
       propertyPath: playerSneaking
       value: 
+      objectReference: {fileID: 762579926}
+    - target: {fileID: 8222422230528054107, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
+      propertyPath: MaxDistance
+      value: 15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
@@ -86980,14 +87264,22 @@ PrefabInstance:
     - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
       propertyPath: player
       value: 
+      objectReference: {fileID: 762579924}
+    - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
+      propertyPath: followRange
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
       propertyPath: playerInput
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1875180302}
     - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
       propertyPath: playerSneaking
       value: 
+      objectReference: {fileID: 762579926}
+    - target: {fileID: 8222422230528054107, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
+      propertyPath: MaxDistance
+      value: 15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
@@ -87816,18 +88108,22 @@ PrefabInstance:
     - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 762579924}
     - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
       propertyPath: followRange
-      value: 2
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
       propertyPath: playerInput
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1875180302}
     - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
       propertyPath: playerSneaking
       value: 
+      objectReference: {fileID: 762579926}
+    - target: {fileID: 8222422230528054107, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
+      propertyPath: MaxDistance
+      value: 15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
@@ -87885,6 +88181,26 @@ PrefabInstance:
     - target: {fileID: 3145773577174369668, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 762579924}
+    - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
+      propertyPath: followRange
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
+      propertyPath: playerInput
+      value: 
+      objectReference: {fileID: 1875180302}
+    - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
+      propertyPath: playerSneaking
+      value: 
+      objectReference: {fileID: 762579926}
+    - target: {fileID: 8222422230528054107, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
+      propertyPath: MaxDistance
+      value: 15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
@@ -88025,18 +88341,22 @@ PrefabInstance:
     - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 762579924}
     - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
       propertyPath: followRange
-      value: 2
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
       propertyPath: playerInput
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1875180302}
     - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
       propertyPath: playerSneaking
       value: 
+      objectReference: {fileID: 762579926}
+    - target: {fileID: 8222422230528054107, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
+      propertyPath: MaxDistance
+      value: 15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
@@ -88104,6 +88424,26 @@ PrefabInstance:
     - target: {fileID: 3145773577174369668, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 762579924}
+    - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
+      propertyPath: followRange
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
+      propertyPath: playerInput
+      value: 
+      objectReference: {fileID: 1875180302}
+    - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
+      propertyPath: playerSneaking
+      value: 
+      objectReference: {fileID: 762579926}
+    - target: {fileID: 8222422230528054107, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
+      propertyPath: MaxDistance
+      value: 15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
@@ -88174,18 +88514,22 @@ PrefabInstance:
     - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 762579924}
     - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
       propertyPath: followRange
-      value: 2
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
       propertyPath: playerInput
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1875180302}
     - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
       propertyPath: playerSneaking
       value: 
+      objectReference: {fileID: 762579926}
+    - target: {fileID: 8222422230528054107, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
+      propertyPath: MaxDistance
+      value: 15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
@@ -88766,14 +89110,22 @@ PrefabInstance:
     - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
       propertyPath: player
       value: 
+      objectReference: {fileID: 762579924}
+    - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
+      propertyPath: followRange
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
       propertyPath: playerInput
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1875180302}
     - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
       propertyPath: playerSneaking
       value: 
+      objectReference: {fileID: 762579926}
+    - target: {fileID: 8222422230528054107, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
+      propertyPath: MaxDistance
+      value: 15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
@@ -90859,18 +91211,22 @@ PrefabInstance:
     - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 762579924}
     - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
       propertyPath: followRange
-      value: 2
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
       propertyPath: playerInput
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1875180302}
     - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
       propertyPath: playerSneaking
       value: 
+      objectReference: {fileID: 762579926}
+    - target: {fileID: 8222422230528054107, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
+      propertyPath: MaxDistance
+      value: 15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
@@ -92072,6 +92428,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 762579924}
+    - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
+      propertyPath: followRange
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
+      propertyPath: playerInput
+      value: 
+      objectReference: {fileID: 1875180302}
+    - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
+      propertyPath: playerSneaking
+      value: 
+      objectReference: {fileID: 762579926}
+    - target: {fileID: 8222422230528054107, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
+      propertyPath: MaxDistance
+      value: 15
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
 --- !u!4 &1764590875 stripped
@@ -92137,14 +92513,22 @@ PrefabInstance:
     - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
       propertyPath: player
       value: 
+      objectReference: {fileID: 762579924}
+    - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
+      propertyPath: followRange
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
       propertyPath: playerInput
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1875180302}
     - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
       propertyPath: playerSneaking
       value: 
+      objectReference: {fileID: 762579926}
+    - target: {fileID: 8222422230528054107, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
+      propertyPath: MaxDistance
+      value: 15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
@@ -94543,6 +94927,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 762579924}
+    - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
+      propertyPath: followRange
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
+      propertyPath: playerInput
+      value: 
+      objectReference: {fileID: 1875180302}
+    - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
+      propertyPath: playerSneaking
+      value: 
+      objectReference: {fileID: 762579926}
+    - target: {fileID: 8222422230528054107, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
+      propertyPath: MaxDistance
+      value: 15
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
 --- !u!4 &1820602739 stripped
@@ -94802,18 +95206,22 @@ PrefabInstance:
     - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 762579924}
     - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
       propertyPath: followRange
-      value: 2
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
       propertyPath: playerInput
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1875180302}
     - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
       propertyPath: playerSneaking
       value: 
+      objectReference: {fileID: 762579926}
+    - target: {fileID: 8222422230528054107, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
+      propertyPath: MaxDistance
+      value: 15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
@@ -98917,14 +99325,22 @@ PrefabInstance:
     - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
       propertyPath: player
       value: 
+      objectReference: {fileID: 762579924}
+    - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
+      propertyPath: followRange
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
       propertyPath: playerInput
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1875180302}
     - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
       propertyPath: playerSneaking
       value: 
+      objectReference: {fileID: 762579926}
+    - target: {fileID: 8222422230528054107, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
+      propertyPath: MaxDistance
+      value: 15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
@@ -105631,14 +106047,22 @@ PrefabInstance:
     - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
       propertyPath: player
       value: 
+      objectReference: {fileID: 762579924}
+    - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
+      propertyPath: followRange
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
       propertyPath: playerInput
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1875180302}
     - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
       propertyPath: playerSneaking
       value: 
+      objectReference: {fileID: 762579926}
+    - target: {fileID: 8222422230528054107, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
+      propertyPath: MaxDistance
+      value: 15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
@@ -107182,14 +107606,22 @@ PrefabInstance:
     - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
       propertyPath: player
       value: 
+      objectReference: {fileID: 762579924}
+    - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
+      propertyPath: followRange
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
       propertyPath: playerInput
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1875180302}
     - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
       propertyPath: playerSneaking
       value: 
+      objectReference: {fileID: 762579926}
+    - target: {fileID: 8222422230528054107, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
+      propertyPath: MaxDistance
+      value: 15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
@@ -108690,6 +109122,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 762579924}
+    - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
+      propertyPath: followRange
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
+      propertyPath: playerInput
+      value: 
+      objectReference: {fileID: 1875180302}
+    - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
+      propertyPath: playerSneaking
+      value: 
+      objectReference: {fileID: 762579926}
+    - target: {fileID: 8222422230528054107, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
+      propertyPath: MaxDistance
+      value: 15
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
 --- !u!4 &2083486310 stripped
@@ -109246,14 +109698,22 @@ PrefabInstance:
     - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
       propertyPath: player
       value: 
+      objectReference: {fileID: 762579924}
+    - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
+      propertyPath: followRange
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
       propertyPath: playerInput
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1875180302}
     - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
       propertyPath: playerSneaking
       value: 
+      objectReference: {fileID: 762579926}
+    - target: {fileID: 8222422230528054107, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
+      propertyPath: MaxDistance
+      value: 15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
@@ -109506,6 +109966,26 @@ PrefabInstance:
     - target: {fileID: 3145773577174369668, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 762579924}
+    - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
+      propertyPath: followRange
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
+      propertyPath: playerInput
+      value: 
+      objectReference: {fileID: 1875180302}
+    - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
+      propertyPath: playerSneaking
+      value: 
+      objectReference: {fileID: 762579926}
+    - target: {fileID: 8222422230528054107, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
+      propertyPath: MaxDistance
+      value: 15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
@@ -110049,14 +110529,22 @@ PrefabInstance:
     - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
       propertyPath: player
       value: 
+      objectReference: {fileID: 762579924}
+    - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
+      propertyPath: followRange
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
       propertyPath: playerInput
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1875180302}
     - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
       propertyPath: playerSneaking
       value: 
+      objectReference: {fileID: 762579926}
+    - target: {fileID: 8222422230528054107, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
+      propertyPath: MaxDistance
+      value: 15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
@@ -110631,18 +111119,22 @@ PrefabInstance:
     - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 762579924}
     - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
       propertyPath: followRange
-      value: 2
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
       propertyPath: playerInput
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1875180302}
     - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
       propertyPath: playerSneaking
       value: 
+      objectReference: {fileID: 762579926}
+    - target: {fileID: 8222422230528054107, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
+      propertyPath: MaxDistance
+      value: 15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
@@ -111015,18 +111507,22 @@ PrefabInstance:
     - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 762579924}
     - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
       propertyPath: followRange
-      value: 2
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
       propertyPath: playerInput
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1875180302}
     - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
       propertyPath: playerSneaking
       value: 
+      objectReference: {fileID: 762579926}
+    - target: {fileID: 8222422230528054107, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
+      propertyPath: MaxDistance
+      value: 15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
@@ -111431,18 +111927,22 @@ PrefabInstance:
     - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 762579924}
     - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
       propertyPath: followRange
-      value: 2
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
       propertyPath: playerInput
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1875180302}
     - target: {fileID: 3938014808898786759, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
       propertyPath: playerSneaking
       value: 
+      objectReference: {fileID: 762579926}
+    - target: {fileID: 8222422230528054107, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
+      propertyPath: MaxDistance
+      value: 15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 291682e4df5a39d4591218b150decdc1, type: 3}
