@@ -67148,6 +67148,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Checkpoint Flag Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 4607880573053657815, guid: d2b455ad91730f24f90713688ed2f00c, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d2b455ad91730f24f90713688ed2f00c, type: 3}
 --- !u!1001 &1289697868
@@ -87896,6 +87900,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2009940608}
     m_Modifications:
+    - target: {fileID: 3055460374712472001, guid: 333707e57056cc7408ff10f7e53c2fdc, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3864311725115303780, guid: 333707e57056cc7408ff10f7e53c2fdc, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -87914,19 +87922,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3864311725115303780, guid: 333707e57056cc7408ff10f7e53c2fdc, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.5000006
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 3864311725115303780, guid: 333707e57056cc7408ff10f7e53c2fdc, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.49999952
+      value: -0.5
       objectReference: {fileID: 0}
     - target: {fileID: 3864311725115303780, guid: 333707e57056cc7408ff10f7e53c2fdc, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.49999955
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 3864311725115303780, guid: 333707e57056cc7408ff10f7e53c2fdc, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.5000003
+      value: -0.5
       objectReference: {fileID: 0}
     - target: {fileID: 3864311725115303780, guid: 333707e57056cc7408ff10f7e53c2fdc, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -87938,11 +87946,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3864311725115303780, guid: 333707e57056cc7408ff10f7e53c2fdc, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 90
+      value: -90
       objectReference: {fileID: 0}
     - target: {fileID: 4533747852449398238, guid: 333707e57056cc7408ff10f7e53c2fdc, type: 3}
       propertyPath: m_Name
       value: Key (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4533747852449398238, guid: 333707e57056cc7408ff10f7e53c2fdc, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 333707e57056cc7408ff10f7e53c2fdc, type: 3}
@@ -88589,6 +88601,10 @@ PrefabInstance:
     - target: {fileID: 4607880573053657815, guid: d2b455ad91730f24f90713688ed2f00c, type: 3}
       propertyPath: m_Name
       value: Checkpoint Flag Variant (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4607880573053657815, guid: d2b455ad91730f24f90713688ed2f00c, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d2b455ad91730f24f90713688ed2f00c, type: 3}
