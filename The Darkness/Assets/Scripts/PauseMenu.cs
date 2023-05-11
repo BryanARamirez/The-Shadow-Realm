@@ -14,6 +14,7 @@ public class PauseMenu : MonoBehaviour
     [SerializeField] private GameObject pauseMenu;
     [SerializeField] private GameObject controlsMenu;
     [SerializeField] private GameObject abilitiesMenu;
+    [SerializeField] private GameObject controlsMenuCanvas;
     public bool isPaused;
     public bool controlsUp;
 
@@ -68,7 +69,8 @@ public class PauseMenu : MonoBehaviour
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
         pauseMenu.SetActive(false);
-        controlsMenu.SetActive(false);
+        controlsMenuCanvas.SetActive(false);
+        controlsMenu.SetActive(true);
         abilitiesMenu.SetActive(false);
         playerInput.enabled = true;
         isPaused = false;
