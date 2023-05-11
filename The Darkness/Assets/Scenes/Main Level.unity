@@ -81653,9 +81653,21 @@ PrefabInstance:
       propertyPath: sneakChargeText
       value: 
       objectReference: {fileID: 1255946599}
+    - target: {fileID: 2185706714718288619, guid: 432a49b4cb733504fa423d0e1ec3928e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2185706714718288619, guid: 432a49b4cb733504fa423d0e1ec3928e, type: 3}
+      propertyPath: m_TagString
+      value: StunTaser
+      objectReference: {fileID: 0}
     - target: {fileID: 2265249329359795217, guid: 432a49b4cb733504fa423d0e1ec3928e, type: 3}
       propertyPath: m_SpotAngle
       value: 46.042133
+      objectReference: {fileID: 0}
+    - target: {fileID: 2502321908448420404, guid: 432a49b4cb733504fa423d0e1ec3928e, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.16
       objectReference: {fileID: 0}
     - target: {fileID: 2710168668156306655, guid: 432a49b4cb733504fa423d0e1ec3928e, type: 3}
       propertyPath: staminaBar
