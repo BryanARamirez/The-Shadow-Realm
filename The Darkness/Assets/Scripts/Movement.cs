@@ -26,7 +26,6 @@ public class Movement : MonoBehaviour
     private bool sneakReady;
     public int sneakCharge;
     public int sneakMax = 1;
-    [SerializeField] private Image sneakActive;
     [SerializeField] private GameObject ammoFullTextGO;
     [SerializeField] private Text ammoFullText;
 
@@ -67,15 +66,6 @@ public class Movement : MonoBehaviour
 
         verticalVelocity.y += gravity * Time.deltaTime;
         controller.Move(verticalVelocity * Time.deltaTime);
-
-        if(sneakReady)
-        {
-            sneakActive.enabled = true;
-        }
-        if (sneakReady == false)
-        {
-            sneakActive.enabled = false;
-        }
     }
 
     public void ReceiveInput(Vector2 _horizontalInput)
