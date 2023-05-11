@@ -116,6 +116,17 @@ public class PlayerInput : MonoBehaviour
             keyCount = keyCount + 1;
             SetCountText();
         }
+        if (other.tag == "Door")
+        {
+            if (keyCount >= other.gameObject.GetComponent<Door>().number_of_locks)
+            {
+                other.gameObject.SetActive(false);
+            }
+            else
+            {
+                Debug.Log("Not enough Keys!");
+            }
+        }
         if (other.gameObject.CompareTag("Respawn Point"))
         {
             spawnPointGO.transform.position = other.transform.position;
